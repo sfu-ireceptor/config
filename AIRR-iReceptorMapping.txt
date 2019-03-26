@@ -96,8 +96,8 @@ iReceptor Metadata			Age	Age
 iReceptor API	ir_sequence_count	ir_sequence_count										ir_sequence_count		ir_repertoire	ir_api						ir_sequence_count							
 	ir_filtered_sequence_count	ir_filtered_sequence_count												ir_repertoire	ir_api													
 iReceptor Parameters	ir_username	ir_username												ir_repertoire	ir_parameter													
-	ir_subject_age_min	ir_subject_age_min	Min Age	Min Age							ir_min_age	ir_min_age		ir_repertoire	ir_parameter			Min Age			ir_min_age	age_min		ir_subject_age_min	double			
-	ir_subject_age_max	ir_subject_age_max	Max Age	Max Age							ir_max_age	ir_max_age		ir_repertoire	ir_parameter			Max Age			ir_max_age	age_max		ir_subject_age_max	double			
+	ir_subject_age_min	ir_subject_age_min	Min Age	Min Age							ir_min_age	ir_min_age		ir_repertoire	ir_parameter			Min Age			ir_subject_age_min	age_min		ir_subject_age_min	double			
+	ir_subject_age_max	ir_subject_age_max	Max Age	Max Age							ir_max_age	ir_max_age		ir_repertoire	ir_parameter			Max Age			ir_subject_age_max	age_max		ir_subject_age_max	double			
 	ir_project_sample_id_list	ir_project_sample_id_list												ir_repertoire	ir_parameter													
 	ir_data_format	ir_data_format												ir_repertoire	ir_parameter													
 	ir_show_unproductive	ir_show_unproductive												ir_repertoire	ir_parameter													
