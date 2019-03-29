@@ -74,7 +74,7 @@
 	"collapsing_method"	"collapsing_method"	"Collapsing method"	"Collapsing method"							"collapsing_method"	"collapsing_method"	"collapsing_method"	"repertoire"	"software_processing"	"collapsing_method"	"string"	"Collapsing method"	"The method used for combining multiple sequences from (4) into a single sequence in (5)"	"MUSCLE 3.8.31"	"collapsing_method"							
 	"data_processing_protocols"	"data_processing_protocols"	"Data protocols"	"Data processing protocols"							"data_processing_protocols"	"data_processing_protocols"	"data_processing_protocols"	"repertoire"	"software_processing"	"data_processing_protocols"	"string"	"Data processing protocols"	"General description of how QC is performed"		"data_processing_protocols"							
 "iReceptor Metadata"			"Age"	"Age"																								
-			"SRA ID"	"SRA Run ID"							"ir_sra_run_id"	"ir_sra_run_id"									"ir_sra_run_id"							
+			"SRA ID"	"SRA Run ID"							"ir_sra_run_id"	"ir_sra_run_id"		"ir_repertoire"							"ir_sra_run_id"							
 			"Marker 1"	"Marker 1"																								
 			"Marker 2"	"Marker 2"																								
 			"Marker 3"	"Marker 3"																								
