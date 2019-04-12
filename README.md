@@ -1,4 +1,4 @@
-# iReceptor AIRR Mapping Configuration File
+# iReceptor AIRR Mapping Configuration File - for ipa2 service
 
 One of the challenges of maintaining a platform that federates data across multiple repositories
 is the mapping of terms between those repositories. In order for data to be interoperable (the I 
