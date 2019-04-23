@@ -93,7 +93,7 @@ iReceptor Metadata			Age	Age
 																												
 																												
 																												
-iReceptor API	ir_sequence_count	ir_sequence_count										ir_sequence_count		ir_repertoire	ir_api						ir_sequence_count							
+iReceptor API	ir_sequence_count	ir_sequence_count	# Annotated Sequences	# Annotated Sequences								ir_sequence_count		ir_repertoire	ir_api						ir_sequence_count							
 	ir_filtered_sequence_count	ir_filtered_sequence_count												ir_repertoire	ir_api													
 iReceptor Parameters	ir_username	ir_username												ir_repertoire	ir_parameter													
 	ir_subject_age_min	ir_subject_age_min	Min Age	Min Age							ir_min_age	ir_min_age		ir_repertoire	ir_parameter			Min Age			ir_subject_age_min	age_min		ir_subject_age_min	double			
