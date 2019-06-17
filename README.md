@@ -4,8 +4,7 @@ One of the challenges of maintaining a platform that federates data across multi
 is the mapping of terms between those repositories. In order for data to be interoperable (the I 
 in the FAIR data principles of being Findable, Accessible, Interoperable, and Reusable) between repositories it
 is necessary to have a well, defined consistent representation of the data. The iReceptor Platform
-relies on the AIRR
-Minimal Standards (MiAIRR) specification and the accompanying API and file formats to enable this
+relies on the AIRR Minimal Standards (MiAIRR) specification and the accompanying API and file formats to enable this
 interoperability and facilitate data sharing. In addition, each of the components of the platform
 might independently choose to represent data in a different way. The best way to illustrate this it to
 consider a concrete example. The MiAIRR minimal standard defines one of the fields that AIRR-seq data
