@@ -128,9 +128,9 @@ germline_alignment						germline_alignment						germline_alignment	germline_alig
 germline_alignment_aa						germline_alignment_aa						germline_alignment_aa	germline_alignment_aa		Rearrangement	Rearrangement	germline_alignment_aa	germline_alignment_aa	string	Amino acid translation of the assembled germline sequence.	FALSE										TRUE								
 junction	Junction NT	Imgt-Junction Nucleotide Sequence	3_Nt-sequences.txt	JUNCTION	FALSE	junction	nSeqCDR3					junction	junction	IMGT-JUNCTION nucleotide sequence	Rearrangement	Rearrangement	junction	junction	string	"Junction region nucleotide sequence, where the junction is defined as the CDR3 plus the two flanking conserved codons."	TRUE	TRUE	TRUE	TGTGCAAGAGCGGGAGTTTACGACGGATATACTATGGACTACTGG	6	data (processed sequence)					TRUE								
 junction_aa	Imgt-Junction Amino Acid Sequence	Imgt-Junction Amino Acid Sequence	5_AA-sequences.txt	JUNCTION	FALSE	junction_aa	aaSeqCDR3					junction_aa	junction_aa	IMGT-JUNCTION amino acid sequence	Rearrangement	Rearrangement	junction_aa	junction_aa	string	Junction region amino acid sequence.	TRUE	TRUE	TRUE	CARAGVYDGYTMDYW	6	data (processed sequence)					FALSE	junction_aa	junction_aa	TRUE	junction_aa	string	junction_aa		junction_aa
-np1			6_Junction.txt		TRUE	np1						np1	np1		Rearrangement	Rearrangement	np1	np1	string	Nucleotide sequence of the combined N/P region between the V and D segments or V and J segments.	FALSE										TRUE	np1							
+np1			6_Junction.txt	P3'V or N-REGION or N1-REGION or P5'D or P5'D1 or P5'J	TRUE	np1						np1	np1		Rearrangement	Rearrangement	np1	np1	string	Nucleotide sequence of the combined N/P region between the V and D segments or V and J segments.	FALSE										TRUE	np1							
 np1_aa			6_Junction.txt		TRUE	np1_aa						np1_aa	np1_aa		Rearrangement	Rearrangement	np1_aa	np1_aa	string	Amino acid translation of the np1 field.	FALSE										TRUE	np1_aa							
-np2			6_Junction.txt		TRUE	np2						np2	np2		Rearrangement	Rearrangement	np2	np2	string	Nucleotide sequence of the combined N/P region between the D and J segments.	FALSE										TRUE	np2							
+np2			6_Junction.txt	P3'D or P3'D1 or N2-REGION or P5'J or P5'D2	TRUE	np2						np2	np2		Rearrangement	Rearrangement	np2	np2	string	Nucleotide sequence of the combined N/P region between the D and J segments.	FALSE										TRUE	np2							
 np2_aa			6_Junction.txt		TRUE	np2_aa						np2_aa	np2_aa		Rearrangement	Rearrangement	np2_aa	np2_aa	string	Amino acid translation of the np2 field.	FALSE										TRUE	np2_aa							
 cdr1			3_Nt-sequences.txt	CDR1-IMGT	FALSE	cdr1						cdr1	cdr1		Rearrangement	Rearrangement	cdr1	cdr1	string	Nucleotide sequence of the aligned CDR1 region.	FALSE										TRUE	cdr1							
 cdr1_aa			5_AA-sequences.txt	CDR1-IMGT	FALSE	cdr1_aa						cdr1_aa	cdr1_aa		Rearrangement	Rearrangement	cdr1_aa	cdr1_aa	string	Amino acid translation of the cdr1 field.	FALSE										TRUE	cdr1_aa	cdr1_aa	TRUE					cdr1_aa
@@ -214,44 +214,42 @@ junction_length			6_Junction.txt	JUNCTION-nt nb	FALSE	junction_length						junct
 junction_aa_length					TRUE	junction_aa_length						junction_aa_length	junction_aa_length		Rearrangement	Rearrangement	junction_aa_length	junction_aa_length	integer	Number of amino acids in the junction sequence.	FALSE										FALSE								
 np1_length			6_Junction.txt	"P3'V,N-REGION; N1-REGION,P5'D,P5'D1,P5'J"	TRUE	np1_length						np1_length	np1_length		Rearrangement	Rearrangement	np1_length	np1_length	integer	Number of nucleotides between the V and D segments or V and J segments.	FALSE										TRUE	np1_length							
 np2_length			6_Junction.txt	"P3'D, P3'D1, N2-REGION,P5'D2,P5'J"	TRUE	np2_length						np2_length	np2_length		Rearrangement	Rearrangement	np2_length	np2_length	integer	Number of nucleotides between the D and J segments.	FALSE										TRUE	np2_length							
-n1_length			6_Junction.txt	N2-REGION-nt nb	FALSE	n1_length						n1_length	n1_length		Rearrangement	Rearrangement	n1_length	n1_length	integer	Number of untemplated nucleotides 5' of the D segment.	FALSE										TRUE	n1_length							
-n2_length			6_Junction.txt	P3'V-nt nb	FALSE	n2_length						n2_length	n2_length		Rearrangement	Rearrangement	n2_length	n2_length	integer	Number of untemplated nucleotides 3' of the D segment.	FALSE										TRUE	n2_length							
-p3v_length			6_Junction.txt	P5'D-nt nb or P3'D1-nt nb	TRUE	p3v_length						p3v_length	p3v_length		Rearrangement	Rearrangement	p3v_length	p3v_length	integer	Number of palindromic nucleotides 3' of the V segment.	FALSE										TRUE	p3v_length							
-p5d_length			6_Junction.txt	P3'D-nt nb or P3'D1-nt nb	TRUE	p5d_length						p5d_length	p5d_length		Rearrangement	Rearrangement	p5d_length	p5d_length	integer	Number of palindromic nucleotides 5' of the D segment.	FALSE										TRUE	p5d_length							
-p3d_length			6_Junction.txt	P5'J-nt nb	FALSE	p3d_length						p3d_length	p3d_length		Rearrangement	Rearrangement	p3d_length	p3d_length	integer	Number of palindromic nucleotides 3' of the D segment.	FALSE										TRUE	p3d_length							
-p5j_length						p5j_length						p5j_length	p5j_length		Rearrangement	Rearrangement	p5j_length	p5j_length	integer	Number of palindromic nucleotides 5' of the J segment.	FALSE										TRUE	p5j_length							
+n1_length			6_Junction.txt	N- or N1-REGION-nt nb	TRUE	n1_length						n1_length	n1_length		Rearrangement	Rearrangement	n1_length	n1_length	integer	Number of untemplated nucleotides 5' of the D segment.	FALSE										TRUE	n1_length							
+n2_length			6_Junction.txt	N2-REGION-nt nb	FALSE	n2_length						n2_length	n2_length		Rearrangement	Rearrangement	n2_length	n2_length	integer	Number of untemplated nucleotides 3' of the D segment.	FALSE										TRUE	n2_length							
+p3v_length			6_Junction.txt	P3'V-nt nb	FALSE	p3v_length						p3v_length	p3v_length		Rearrangement	Rearrangement	p3v_length	p3v_length	integer	Number of palindromic nucleotides 3' of the V segment.	FALSE										TRUE	p3v_length							
+p5d_length			6_Junction.txt	P5'D-nt nb or P3'D1-nt nb	TRUE	p5d_length						p5d_length	p5d_length		Rearrangement	Rearrangement	p5d_length	p5d_length	integer	Number of palindromic nucleotides 5' of the D segment.	FALSE										TRUE	p5d_length							
+p3d_length			6_Junction.txt	P3'D-nt nb or P3'D1-nt nb	TRUE	p3d_length						p3d_length	p3d_length		Rearrangement	Rearrangement	p3d_length	p3d_length	integer	Number of palindromic nucleotides 3' of the D segment.	FALSE										TRUE	p3d_length							
+p5j_length			6_Junction.txt	P5'J-nt nb	FALSE	p5j_length						p5j_length	p5j_length		Rearrangement	Rearrangement	p5j_length	p5j_length	integer	Number of palindromic nucleotides 5' of the J segment.	FALSE										TRUE	p5j_length							
 consensus_count						consensus_count						consensus_count	consensus_count		Rearrangement	Rearrangement	consensus_count	consensus_count	integer	"Number of reads contributing to the (UMI) consensus for this sequence. For example, the sum of the number of reads for all UMIs that contribute to the query sequence."	FALSE										TRUE	consensus_count							
 duplicate_count	Read Count	Read Count				duplicate_count						duplicate_count	duplicate_count	Read count	Rearrangement	Rearrangement	duplicate_count	duplicate_count	integer	"Copy number or number of duplicate observations for the query sequence. For example, the number of UMIs sharing an identical sequence or the number of identical observations of this sequence absent UMIs."	TRUE	TRUE	TRUE	123	6	data (processed sequence)					TRUE	duplicate_count							
 pair_id	Paired-Chain Index	Paired-Chain Index				pair_id						pair_id	pair_id	Paired-chain index	Rearrangement	Rearrangement	pair_id	pair_id	string	Valid sequence_id that was determined by experimental or computational means to be associated with the current Rearrangement on the cellular level.	TRUE	TRUE	TRUE	ABC314159	6	data (processed sequence)					FALSE	pair_id							
 cell_id	Cell Index	Cell Index				cell_id						cell_id	cell_id	Cell index	Rearrangement	Rearrangement	cell_id	cell_id	string	Identifier defining the cell of origin for the query sequence.	TRUE	TRUE	TRUE	W06_046_091	6	data (processed sequence)					FALSE	cell_id							
 clone_id						clone_id						clone_id	clone_id		Rearrangement	Rearrangement	clone_id	clone_id	string	Clonal cluster assignment for the query sequence.	FALSE	TRUE	TRUE								FALSE	clone_id							rearrangement_id
 rearrangement_id						rearrangement_id						rearrangement_id	rearrangement_id		Rearrangement	Rearrangement	rearrangement_id	rearrangement_id	string	"Identifier for the Rearrangement object. May be identical to sequence_id, but will usually be a univerally unique record locator for database applications."	FALSE	TRUE	TRUE								FALSE	rearrangement_id							
-ir_project_sample_id						repertoire_id						repertoire_id	repertoire_id		Rearrangement	Rearrangement	repertoire_id	repertoire_id	string	Identifier to the associated repertoire in study metadata.	FALSE	TRUE	TRUE								FALSE	repertoire_id							
+ir_project_sample_id						repertoire_id						ir_project_sample_id	repertoire_id		Rearrangement	Rearrangement	repertoire_id	repertoire_id	string	Identifier to the associated repertoire in study metadata.	FALSE	TRUE	TRUE								FALSE	repertoire_id							
 sample_processing_id	Sample Processing ID	Sample Processing ID										sample_processing_id	sample_processing_id		Repertoire	SampleProcessing	sample.sample_processing_id	sample.0.sample_processing_id	string	"Identifier for the sample processing object. This field should be unique within the repertoire. This field can be used to uniquely identify the combination of sample, cell processing, nucleic acid processing and sequencing run information for the repertoire."	FALSE	TRUE	TRUE																
 data_processing_id	Data processing ID	Data processing ID										data_processing_id	data_processing_id		Repertoire	DataProcessing	data_processing.data_processing_id	data_processing.0.data_processing_id	string	Identifier for the data processing object.	FALSE	TRUE	TRUE									ir_germline_database							
 germline_database	V(D)J germline database	V(D)J germline reference database										germline_database	germline_database	V(D)J germline reference database	Repertoire	DataProcessing	data_processing.germline_database	data_processing.0.germline_database	string	Source of germline V(D)J genes with version number or date accessed.	TRUE	TRUE	TRUE	"ENSEMBL, Homo sapiens build 90, 2017-10-01"	5	data (processed sequence)						ir_germline_database							
 rearrangement_set_id																																rearrangement_set_id							
 																																							
-ir_vgene_family	V-Gene Family	V-Gene Family													ir_rearrangement	ir_rearrangement_db																	vgene_family						
-ir_vgene_gene	V-Gene Gene	V-Gene Gene													ir_rearrangement	ir_rearrangement_db																ir_vgene_family	vgene_gene						
-#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!				#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!
-ir_jgene_family	J-Gene Family	J-Gene Family													ir_rearrangement	ir_rearrangement_db																ir_jgene_string	jgene_family						
-ir_jgene_gene	J-Gene Gene	J-Gene Gene													ir_rearrangement	ir_rearrangement_db																ir_jgene_family	jgene_gene						
-#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!				#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!	#REF!
-ir_dgene_family	D-Gene Family	D-Gene Family													ir_rearrangement	ir_rearrangement_db																ir_dgene_string	dgene_family						
-ir_dgene_gene	D-Gene Gene	D-Gene Gene													ir_rearrangement	ir_rearrangement_db																ir_dgene_family	dgene_gene						
-ir_created_at	Creation Date	Creation Date													ir_rearrangement	ir_rearrangement_db																ir_dgene_gene							
-ir_updated_at	Update Date	Update Date													ir_rearrangement	ir_rearrangement_db																ir_created_at							
+ir_substring	Junction Substring	Junction Substring										ir_substring			ir_rearrangement	ir_rearrangement_db																	vgene_family						
+ir_vgene_family	V-Gene Family	V-Gene Family										ir_vgene_family			ir_rearrangement	ir_rearrangement_db																	vgene_family						
+ir_vgene_gene	V-Gene Gene	V-Gene Gene										ir_vgene_gene			ir_rearrangement	ir_rearrangement_db																ir_vgene_family	vgene_gene						
+ir_jgene_family	J-Gene Family	J-Gene Family										ir_jgene_family			ir_rearrangement	ir_rearrangement_db																ir_jgene_string	jgene_family						
+ir_jgene_gene	J-Gene Gene	J-Gene Gene										ir_jgene_gene			ir_rearrangement	ir_rearrangement_db																ir_jgene_family	jgene_gene						
+ir_dgene_family	D-Gene Family	D-Gene Family										ir_dgene_family			ir_rearrangement	ir_rearrangement_db																ir_dgene_string	dgene_family						
+ir_dgene_gene	D-Gene Gene	D-Gene Gene										ir_dgene_gene			ir_rearrangement	ir_rearrangement_db																ir_dgene_family	dgene_gene						
+ir_created_at	Creation Date	Creation Date										ir_created_at			ir_rearrangement	ir_rearrangement_db																ir_dgene_gene							
+ir_updated_at	Update Date	Update Date										ir_updated_at			ir_rearrangement	ir_rearrangement_db																ir_created_at							
 																																							
-ir_pair_cdr1_aa	CDR1 AA (paired)	CDR1 AA (paired)													ir_rearrangement	ir_rearrangement_pair																							
-ir_pair_cdr2_aa	CDR2 AA (paired)	CDR2 AA (paired)													ir_rearrangement	ir_rearrangement_pair																ir_pair_cdr1_aa							
-ir_pair_cdr3_aa	CDR3 AA (paired)	CDR3 AA (paired)													ir_rearrangement	ir_rearrangement_pair																ir_pair_cdr2_aa							
-ir_pair_v_call	V Gene and Allele (paired)	V Gene and Allele (paired)													ir_rearrangement	ir_rearrangement_pair																ir_pair_cdr3_aa							
-ir_pair_d_call	D Gene and Allele (paired)	D Gene and Allele (paired)													ir_rearrangement	ir_rearrangement_pair																ir_pair_v_call							
-ir_pair_j_call	J Gene and Allele (paired)	J Gene and Allele (paired)													ir_rearrangement	ir_rearrangement_pair																ir_pair_d_call							
-ir_pair_junction_aa	Junction AA (paired)	Junction AA (paired)													ir_rearrangement	ir_rearrangement_pair																ir_pair_j_call							
-ir_pair_id	Pair ID	Paired Sequence ID													ir_rearrangement	ir_rearrangement_pair																ir_pair_junction_aa							
-																																							
+ir_pair_cdr1_aa	CDR1 AA (paired)	CDR1 AA (paired)										ir_pair_cdr1_aa			ir_rearrangement	ir_rearrangement_pair																							
+ir_pair_cdr2_aa	CDR2 AA (paired)	CDR2 AA (paired)										ir_pair_cdr2_aa			ir_rearrangement	ir_rearrangement_pair																ir_pair_cdr1_aa							
+ir_pair_cdr3_aa	CDR3 AA (paired)	CDR3 AA (paired)										ir_pair_cdr3_aa			ir_rearrangement	ir_rearrangement_pair																ir_pair_cdr2_aa							
+ir_pair_v_call	V Gene and Allele (paired)	V Gene and Allele (paired)										ir_pair_v_call			ir_rearrangement	ir_rearrangement_pair																ir_pair_cdr3_aa							
+ir_pair_d_call	D Gene and Allele (paired)	D Gene and Allele (paired)										ir_pair_d_call			ir_rearrangement	ir_rearrangement_pair																ir_pair_v_call							
+ir_pair_j_call	J Gene and Allele (paired)	J Gene and Allele (paired)										ir_pair_j_call			ir_rearrangement	ir_rearrangement_pair																ir_pair_d_call							
+ir_pair_junction_aa	Junction AA (paired)	Junction AA (paired)										ir_pair_junction_aa			ir_rearrangement	ir_rearrangement_pair																ir_pair_j_call							
+																																#N/A							
 																																							
 																																							
 																																							
