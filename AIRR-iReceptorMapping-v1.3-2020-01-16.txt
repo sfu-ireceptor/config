@@ -234,7 +234,7 @@
 "germline_database_rearrangement"						"germline_database"					"germline_database"		"Rearrangement"	"Rearrangement"	"germline_database"	"germline_database"	"string"	"Source of germline V(D)J genes with version number or date accessed."				"ENSEMBL, Homo sapiens build 90, 2017-10-01"				1												
 "rearrangement_set_id"																																						
 "ir_annotation_set_metadata_id_rearrangement"													"IR_Rearrangement"	"IR_RearrangementDB"			"string"																					
-"ir_substring"	"Junction Substring"	"Junction Substring"											"IR_Rearrangement"	"IR_RearrangementDB"			"string"													"ir_substring"	"string"	"substring"						
+"ir_substring"	"Junction Substring"	"Junction Substring"											"IR_Rearrangement"	"IR_RearrangementDB"			"string"													"substring"	"string"	"substring"						
 "ir_vgene_family"	"V-Gene Family"	"V-Gene Family"											"IR_Rearrangement"	"IR_RearrangementDB"			"string"													"vgene_family"	"string"	"vgene_family"						
 "ir_vgene_gene"	"V-Gene Gene"	"V-Gene Gene"											"IR_Rearrangement"	"IR_RearrangementDB"			"string"													"vgene_gene"	"string"	"vgene_gene"						
 "ir_jgene_family"	"J-Gene Family"	"J-Gene Family"											"IR_Rearrangement"	"IR_RearrangementDB"			"string"													"jgene_family"	"string"	"jgene_family"						
