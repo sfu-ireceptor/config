@@ -94,7 +94,7 @@
 "analysis_provenance_id"	"Analysis ID"	"Analysis Provenance ID"								"analysis_provenance_id"	"analysis_provenance_id"		"Repertoire"	"DataProcessing"	"data_processing.analysis_provenance_id"	"data_processing.0.analysis_provenance_id"	"string"	"Identifier for machine-readable PROV model of analysis provenance"												"analysis_provenance_id"	"string"							
 "data_processing_files"	"Data Processing Files"	"Data processing files"								"data_processing_files"	"data_processing_files"		"Repertoire"	"DataProcessing"	"data_processing.data_processing_files"	"data_processing.0.data_processing_files"	"string"	"Filenames "	1	1	1		5	"data (processed sequence)"						"data_processing_files"	"string"							
 																																						
-"ir_sequence_count"	"# Annotated Sequences"	"# Annotated Sequences"											"IR_Repertoire"	"IR_API"			"number"													"ir_sequence_count"	"integer"							
+"ir_sequence_count"	"# Annotated Sequences"	"# Annotated Sequences"											"IR_Repertoire"	"IR_API"			"number"													"ir_sequence_count"	"integer"	"ir_sequence_count"						
 "ir_filtered_sequence_count"													"IR_Repertoire"	"IR_API"			"number"																					
 "ir_username"													"IR_Repertoire"	"IR_Parameter"																								
 																																						
