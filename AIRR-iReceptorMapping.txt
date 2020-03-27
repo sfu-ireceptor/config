@@ -1,4 +1,7 @@
 ir_id	ir_short	ir_full	vquest_file	vquest	vquest_calculate	igblast	mixcr	ir_general	ir_curator	ir_repository	ir_repository_type	ir_repository_is_array	airr	airr_name	ir_class	ir_subclass	ir_adc_api_query	ir_adc_api_response	airr_type	airr_is_array	airr_description	airr_miairr	airr_required	airr_nullable	airr_example	airr_set	airr_subset	airr_format	airr_enum	airr_deprecated	airr_default	airr_adc-api-optional	service_name	projection	ir_api_input	ir_api_input_type	ir_api_output	ir_api_output_type	airr_tsv
+	26	25	36	37	38	39	40	41	28	29	12	11	4	5	7	8	9	10	12	11	13	14	15	16	17	18	19	20	21	22	23	24	44	45	46	47	48	49	50
+B	AA	Z	AK	AL	AM	AN	AO	AP	AC	AD	AF	AE	E	F	H	I	J	K	M	L	N	O	P	Q	R	S	T	U	V	W	X	Y	AS	AT	AU	AV	AW	AX	AY
+iReceptor Identifier	iReceptor Short Name	iReceptor Full Name	vQuest File	Vquest	Vquest calculation required?	igblast	MiXCR	General rearrangement parsing mapping	Curator Fields that should be in metadata	Default repository column	Repository type	Repository stored as an array?	AIRR Field Name	AIRR Full Name	AIRR Class	AIRR Subclass	API Query	API Response	AIRR type	AIRR type is an array?	AIRR Description	Part of MiAIRR?	AIRR Required	AIRR Nullable	AIRR Example	AIRR set	AIRR subset	AIRR Format	AIRR Enum	AIRR Depreceted	AIRR Default	AIRR ADC API Optional							
 repertoire_id	Repertoire ID	Repertoire ID							repertoire_id	repertoire_id	string	FALSE	repertoire_id		Repertoire	Repertoire	repertoire_id	repertoire_id	string	FALSE	"Identifier for the repertoire object. This identifier should be globally unique so that repertoires from multiple studies can be combined together without conflict. The repertoire_id is used to link other AIRR data to a Repertoire. Specifically, the Rearrangements Schema includes repertoire_id for referencing the specific Repertoire for that Rearrangement."	FALSE	TRUE	TRUE									ir_project_sample_id		repertoire_id	string	repertoire_id	string	
 study_id	Study ID	Study ID							study_id	study_id	string	FALSE	study_id	Study ID	Repertoire	Study	study.study_id	study.study_id	string	FALSE	Unique ID assigned by study registry	TRUE	TRUE	TRUE	PRJNA001	1	study						study_id		study_id	string	study_id	string	
 study_title	Study title	Study title							study_title	study_title	string	FALSE	study_title	Study title	Repertoire	Study	study.study_title	study.study_title	string	FALSE	Descriptive study title	TRUE	TRUE	TRUE	Effects of sun light exposure of the Treg repertoire	1	study						study_title		study_title	string	study_title	string	
@@ -120,24 +123,24 @@ ir_annotation_set_metadata_id										ir_annotation_set_metadata_id	string	FALS
 ir_ancillary_rearrangement_file_name										ir_ancillary_rearrangement_file_name	string	FALSE			IR_Repertoire	IR_Curator			string	FALSE																			
 																																							
 sequence_id	Sequence ID	Sequence ID	1_Summary.txt	Sequence ID	FALSE	sequence_id	descrR1			sequence_id	string	FALSE	sequence_id		Rearrangement	Rearrangement	sequence_id	sequence_id	string	FALSE	"Unique query sequence identifier within the file. Most often this will be the input sequence header or a substring thereof, but may also be a custom identifier defined by the tool in cases where query sequences have been combined in some fashion prior to alignment."	FALSE										TRUE	sequence_id				sequence_id	string	sequence_id
-sequence	Sequence	Sequence	1_Summary.txt	Sequence	FALSE	sequence	readSequence			sequence	string	FALSE	sequence		Rearrangement	Rearrangement	sequence	sequence	string	FALSE	"The query nucleotide sequence. Usually, this is the unmodified input sequence, which may be reverse complemented if necessary. In some cases, this field may contain consensus sequences or other types of collapsed input sequences if these steps are performed prior to alignment."	FALSE										TRUE	sequence				sequence	string	sequence
+sequence	Sequence	Sequence	1_Summary.txt	Sequence	FALSE	sequence	readSequence	sequence		sequence	string	FALSE	sequence		Rearrangement	Rearrangement	sequence	sequence	string	FALSE	"The query nucleotide sequence. Usually, this is the unmodified input sequence, which may be reverse complemented if necessary. In some cases, this field may contain consensus sequences or other types of collapsed input sequences if these steps are performed prior to alignment."	FALSE										TRUE	sequence				sequence	string	sequence
 sequence_aa	Sequence AA	Sequence AA				sequence_aa				sequence_aa	string	FALSE	sequence_aa		Rearrangement	Rearrangement	sequence_aa	sequence_aa	string	FALSE	Amino acid translation of the query nucleotide sequence.	FALSE										TRUE	sequence_aa				sequence_aa	string	sequence_aa
-rev_comp	Rev Comp	Rev Comp	1_Summary.txt	Orientation	TRUE	rev_comp				rev_comp	boolean	FALSE	rev_comp		Rearrangement	Rearrangement	rev_comp	rev_comp	boolean	FALSE	"True if the alignment is on the opposite strand (reverse complemented) with respect to the query sequence. If True then all output data, such as alignment coordinates and sequences, are based on the reverse complement of 'sequence'."												rev_comp				rev_comp	boolean	rev_comp
+rev_comp	Rev Comp	Rev Comp	1_Summary.txt	Orientation	TRUE	rev_comp		sequenceStatus		rev_comp	boolean	FALSE	rev_comp		Rearrangement	Rearrangement	rev_comp	rev_comp	boolean	FALSE	"True if the alignment is on the opposite strand (reverse complemented) with respect to the query sequence. If True then all output data, such as alignment coordinates and sequences, are based on the reverse complement of 'sequence'."												rev_comp				rev_comp	boolean	rev_comp
 productive	Productive	Productive	1_Summary.txt	V-DOMAIN Functionality	TRUE	productive				productive	boolean	FALSE	productive		Rearrangement	Rearrangement	productive	productive	boolean	FALSE	True if the V(D)J sequence is predicted to be productive.												functional	TRUE	functional	boolean	functional	boolean	functional
 vj_in_frame	Vj In Frame	Vj In Frame	1_Summary.txt	JUNCTION frame	TRUE	vj_in_frame				vj_in_frame	boolean	FALSE	vj_in_frame		Rearrangement	Rearrangement	vj_in_frame	vj_in_frame	boolean	FALSE	True if the V and J gene alignments are in-frame.	FALSE										TRUE	vj_in_frame				vj_in_frame	boolean	vj_in_frame
 stop_codon	Stop Codon	Stop Codon	4_IMGT-gapped-AA-sequences.txt	V-D-J-REGION or V-J-REGION	TRUE	stop_codon				stop_codon	boolean	FALSE	stop_codon		Rearrangement	Rearrangement	stop_codon	stop_codon	boolean	FALSE	True if the aligned sequence contains a stop codon.	FALSE										TRUE	stop_codon				stop_codon	boolean	stop_codon
-locus	Gene Locus	Gene Locus			TRUE	locus				locus	string	FALSE	locus	Gene locus	Rearrangement	Rearrangement	locus	locus	string	FALSE	"Gene locus (chain type). Note that this field uses a controlled vocabulary that is meant to provide a generic classification of the locus, not necessarily the correct designation according to a specific nomenclature."	FALSE	TRUE	TRUE	IGH				"IGH,IGI,IGK,IGL,TRA,TRB,TRD,TRG"			FALSE	locus				locus	string	locus
-v_call	V Gene With Allele	V Gene With Allele	1_Summary.txt	V-GENE and allele	FALSE	v_call	bestVHit			v_call	string	FALSE	v_call	V gene with allele	Rearrangement	Rearrangement	v_call	v_call	string	FALSE	"V gene with allele. If referring to a known reference sequence in a database the relevant gene/allele nomenclature should be followed (e.g., IGHV4-59*01 if using IMGT/GENE-DB)."	TRUE	TRUE	TRUE	IGHV4-59*01	6	data (processed sequence)						v_call	TRUE	v_call	string	v_call	string	v_call
-d_call	D Gene With Allele	D Gene With Allele	1_Summary.txt	D-GENE and allele	FALSE	d_call	bestDHit			d_call	string	FALSE	d_call	D gene with allele	Rearrangement	Rearrangement	d_call	d_call	string	FALSE	"First or only D gene with allele. If referring to a known reference sequence in a database the relevant gene/allele nomenclature should be followed (e.g., IGHD3-10*01 if using IMGT/GENE-DB)."	TRUE	TRUE	TRUE	IGHD3-10*01	6	data (processed sequence)						d_call	TRUE	d_call	string	d_call	string	d_call
+locus	Gene Locus	Gene Locus			TRUE	locus		Locus		locus	string	FALSE	locus	Gene locus	Rearrangement	Rearrangement	locus	locus	string	FALSE	"Gene locus (chain type). Note that this field uses a controlled vocabulary that is meant to provide a generic classification of the locus, not necessarily the correct designation according to a specific nomenclature."	FALSE	TRUE	TRUE	IGH				"IGH,IGI,IGK,IGL,TRA,TRB,TRD,TRG"			FALSE	locus				locus	string	locus
+v_call	V Gene With Allele	V Gene With Allele	1_Summary.txt	V-GENE and allele	FALSE	v_call	bestVHit	vMaxResolved		v_call	string	FALSE	v_call	V gene with allele	Rearrangement	Rearrangement	v_call	v_call	string	FALSE	"V gene with allele. If referring to a known reference sequence in a database the relevant gene/allele nomenclature should be followed (e.g., IGHV4-59*01 if using IMGT/GENE-DB)."	TRUE	TRUE	TRUE	IGHV4-59*01	6	data (processed sequence)						v_call	TRUE	v_call	string	v_call	string	v_call
+d_call	D Gene With Allele	D Gene With Allele	1_Summary.txt	D-GENE and allele	FALSE	d_call	bestDHit	dMaxResolved		d_call	string	FALSE	d_call	D gene with allele	Rearrangement	Rearrangement	d_call	d_call	string	FALSE	"First or only D gene with allele. If referring to a known reference sequence in a database the relevant gene/allele nomenclature should be followed (e.g., IGHD3-10*01 if using IMGT/GENE-DB)."	TRUE	TRUE	TRUE	IGHD3-10*01	6	data (processed sequence)						d_call	TRUE	d_call	string	d_call	string	d_call
 d2_call	D2 Call	D2 Call				d2_call				d2_call	string	FALSE	d2_call		Rearrangement	Rearrangement	d2_call	d2_call	string	FALSE	"Second D gene with allele. If referring to a known reference sequence in a database the relevant gene/allele nomenclature should be followed (e.g., IGHD3-10*01 if using IMGT/GENE-DB)."	FALSE			IGHD3-10*01							TRUE	d2_call				d2_call	string	d2_call
-j_call	J Gene With Allele	J Gene With Allele	1_Summary.txt	J-GENE and allele	FALSE	j_call	bestJHit			j_call	string	FALSE	j_call	J gene with allele	Rearrangement	Rearrangement	j_call	j_call	string	FALSE	"J gene with allele. If referring to a known reference sequence in a database the relevant gene/allele nomenclature should be followed (e.g., IGHJ4*02 if using IMGT/GENE-DB)."	TRUE	TRUE	TRUE	IGHJ4*02	6	data (processed sequence)						j_call	TRUE	j_call	string	j_call	string	j_call
+j_call	J Gene With Allele	J Gene With Allele	1_Summary.txt	J-GENE and allele	FALSE	j_call	bestJHit	jMaxResolved		j_call	string	FALSE	j_call	J gene with allele	Rearrangement	Rearrangement	j_call	j_call	string	FALSE	"J gene with allele. If referring to a known reference sequence in a database the relevant gene/allele nomenclature should be followed (e.g., IGHJ4*02 if using IMGT/GENE-DB)."	TRUE	TRUE	TRUE	IGHJ4*02	6	data (processed sequence)						j_call	TRUE	j_call	string	j_call	string	j_call
 c_call	C Region	C Region				c_call				c_call	string	FALSE	c_call	C region	Rearrangement	Rearrangement	c_call	c_call	string	FALSE	"Constant region gene with allele. If referring to a known reference sequence in a database the relevant gene/allele nomenclature should be followed (e.g., IGHG1*01 if using IMGT/GENE-DB)."	TRUE	TRUE	TRUE	IGHG1*01	6	data (processed sequence)						c_call	TRUE	c_call	string	c_call	string	c_call
 sequence_alignment	Sequence Alignment	Sequence Alignment	2_IMGT-gapped-nt-sequences.txt	V-D-J-REGION or V-J-REGION	TRUE	sequence_alignment				sequence_alignment	string	FALSE	sequence_alignment		Rearrangement	Rearrangement	sequence_alignment	sequence_alignment	string	FALSE	"Aligned portion of query sequence, including any indel corrections or numbering spacers, such as IMGT-gaps. Typically, this will include only the V(D)J region, but that is not a requirement."	FALSE										TRUE	sequence_alignment				sequence_alignment	string	sequence_alignment
 sequence_alignment_aa	Sequence Alignment AA	Sequence Alignment AA	4_IMGT-gapped-AA-sequences.txt	V-D-J-REGION or V-J-REGION	TRUE	sequence_alignment_aa				sequence_alignment_aa	string	FALSE	sequence_alignment_aa		Rearrangement	Rearrangement	sequence_alignment_aa	sequence_alignment_aa	string	FALSE	Amino acid translation of the aligned query sequence.	FALSE										TRUE	sequence_alignment_aa				sequence_alignment_aa	string	sequence_alignment_aa
 germline_alignment	Germline Alignment	Germline Alignment				germline_alignment				germline_alignment	string	FALSE	germline_alignment		Rearrangement	Rearrangement	germline_alignment	germline_alignment	string	FALSE	"Assembled, aligned, full-length inferred germline sequence spanning the same region as the sequence_alignment field (typically the V(D)J region) and including the same set of corrections and spacers (if any)."	FALSE										TRUE	germline_alignment				germline_alignment	string	germline_alignment
 germline_alignment_aa	Germline Alignment AA	Germline Alignment AA				germline_alignment_aa				germline_alignment_aa	string	FALSE	germline_alignment_aa		Rearrangement	Rearrangement	germline_alignment_aa	germline_alignment_aa	string	FALSE	Amino acid translation of the assembled germline sequence.	FALSE										TRUE	germline_alignment_aa				germline_alignment_aa	string	germline_alignment_aa
 junction	Junction/CDR3 NT	Imgt-Junction Nucleotide Sequence	3_Nt-sequences.txt	JUNCTION	FALSE	junction	nSeqCDR3			junction	string	FALSE	junction	IMGT-JUNCTION nucleotide sequence	Rearrangement	Rearrangement	junction	junction	string	FALSE	"Junction region nucleotide sequence, where the junction is defined as the CDR3 plus the two flanking conserved codons."	TRUE	TRUE	TRUE	TGTGCAAGAGCGGGAGTTTACGACGGATATACTATGGACTACTGG	6	data (processed sequence)					TRUE	junction				junction	string	junction
-junction_aa	Junction/CDR3 AA	Imgt-Junction Amino Acid Sequence	5_AA-sequences.txt	JUNCTION	FALSE	junction_aa	aaSeqCDR3			junction_aa	string	FALSE	junction_aa	IMGT-JUNCTION amino acid sequence	Rearrangement	Rearrangement	junction_aa	junction_aa	string	FALSE	Amino acid translation of the junction.	TRUE	TRUE	TRUE	CARAGVYDGYTMDYW	6	data (processed sequence)					FALSE	junction_aa	TRUE	junction_aa	string	junction_aa	string	junction_aa
+junction_aa	Junction/CDR3 AA	Imgt-Junction Amino Acid Sequence	5_AA-sequences.txt	JUNCTION	FALSE	junction_aa	aaSeqCDR3	aminoAcid		junction_aa	string	FALSE	junction_aa	IMGT-JUNCTION amino acid sequence	Rearrangement	Rearrangement	junction_aa	junction_aa	string	FALSE	Amino acid translation of the junction.	TRUE	TRUE	TRUE	CARAGVYDGYTMDYW	6	data (processed sequence)					FALSE	junction_aa	TRUE	junction_aa	string	junction_aa	string	junction_aa
 np1	Np1	Np1	6_Junction.txt	P3'V or N-REGION or N1-REGION or P5'D or P5'D1 or P5'J	TRUE	np1				np1	string	FALSE	np1		Rearrangement	Rearrangement	np1	np1	string	FALSE	Nucleotide sequence of the combined N/P region between the V gene and first D gene alignment or between the V gene and J gene alignments.	FALSE										TRUE	np1				np1	string	np1
 np1_aa	Np1 AA	Np1 AA	6_Junction.txt		TRUE	np1_aa				np1_aa	string	FALSE	np1_aa		Rearrangement	Rearrangement	np1_aa	np1_aa	string	FALSE	Amino acid translation of the np1 field.	FALSE										TRUE	np1_aa				np1_aa	string	np1_aa
 np2	Np2	Np2	6_Junction.txt	P3'D or P3'D1 or N2-REGION or P5'J or P5'D2	TRUE	np2				np2	string	FALSE	np2		Rearrangement	Rearrangement	np2	np2	string	FALSE	Nucleotide sequence of the combined N/P region between either the first D gene and J gene alignments or the first D gene and second D gene alignments.	FALSE										TRUE	np2				np2	string	np2
@@ -280,3 +283,129 @@ ir_pair_v_call	V Gene and Allele (paired)	V Gene and Allele (paired)								ir_p
 ir_pair_d_call	D Gene and Allele (paired)	D Gene and Allele (paired)								ir_pair_d_call	string	FALSE			IR_Rearrangement	IR_RearrangementPair			string	FALSE													ir_pair_d_call						
 ir_pair_j_call	J Gene and Allele (paired)	J Gene and Allele (paired)								ir_pair_j_call	string	FALSE			IR_Rearrangement	IR_RearrangementPair			string	FALSE													ir_pair_j_call						
 ir_pair_junction_aa	Junction AA (paired)	Junction AA (paired)								ir_pair_junction_aa	string	FALSE			IR_Rearrangement	IR_RearrangementPair			string	FALSE													ir_pair_junction_aa						
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
