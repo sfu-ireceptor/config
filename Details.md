@@ -19,3 +19,4 @@ The changes are listed below:
 - Row `ir_subject_age_min, ir_subject_age_max` (column ir_id): iReceptor has always tracked an age range, but only recently did the AIRR standard incorporate this. As such, it is necessary to map the two AIRR age_min and age_max fields to the ir_min_age and ir_max_age fields in the repository respectively (column ir_repository).
 - Row `filename` (column ir_id): The new filename field in the AIRR standard needs to be mapped to the iReceptor v1 ir_fasta_file_name field in the existing repository (column ir_repository)
 - Row `germline_database` (column ir_id): The new germline_database field in the AIRR standard needs to be mapped to the iReceptor v1 field ir_germline_database (column ir_repository)
+- Row `organism, organism_id` (column ir_id): The AIRR field for this has changed to `species`. This is stored in the v1 repository as `organism` and `organism_id` (column ir_repository).
