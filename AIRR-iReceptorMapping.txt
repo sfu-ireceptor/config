@@ -103,8 +103,8 @@ ir_rearrangement_file_name	Processed data file names	Processed files	data_proces
 germline_database	V(D)J germline reference database	V(D)J germline database	germline_database	germline_database	string	FALSE								germline_database	V(D)J germline reference database	TRUE	TRUE	Repertoire	DataProcessing	data_processing.germline_database	data_processing.0.germline_database	FALSE	string	Source of germline V(D)J genes with version number or date accessed.	TRUE	TRUE		"ENSEMBL, Homo sapiens build 90, 2017-10-01"	TRUE	5	data (processed sequence)						germline_database		germline_database	string	germline_database	string	
 analysis_provenance_id	Analysis Provenance ID	Analysis ID	analysis_provenance_id	analysis_provenance_id	string	FALSE								analysis_provenance_id		TRUE	FALSE	Repertoire	DataProcessing	data_processing.analysis_provenance_id	data_processing.0.analysis_provenance_id	FALSE	string	Identifier for machine-readable PROV model of analysis provenance	TRUE	TRUE											analysis_provenance_id		analysis_provenance_id	string	analysis_provenance_id	string	
 																																											
-ir_sequence_count	# Annotated Sequences	# Annotated Sequences		ir_sequence_count	integer	FALSE												IR_Repertoire	IR_API			FALSE															ir_sequence_count						
-ir_filtered_sequence_count				ir_filtered_sequence_count	integer	FALSE												IR_Repertoire	IR_API			FALSE																					
+ir_sequence_count	# Annotated Sequences	# Annotated Sequences		ir_sequence_count	integer	FALSE												IR_Repertoire	IR_API			FALSE	integer														ir_sequence_count						
+ir_filtered_sequence_count				ir_filtered_sequence_count	integer	FALSE												IR_Repertoire	IR_API			FALSE	integer																				
 ir_username																		IR_Repertoire	IR_Parameter																								
 																																											
 																																											
@@ -113,16 +113,16 @@ ir_data_format																		IR_Repertoire	IR_Parameter
 ir_show_unproductive																		IR_Repertoire	IR_Parameter																								
 																																											
 																																											
-ir_library_source																		IR_Repertoire	IR_Curator			FALSE																					
+ir_library_source																		IR_Repertoire	IR_Curator			FALSE	string																				
 																																											
-ir_igblast_file_name				ir_igblast_file_name	string	FALSE												IR_Repertoire	IR_Curator			FALSE																					
-ir_imgt_file_name				ir_imgt_file_name	string	FALSE												IR_Repertoire	IR_Curator			FALSE																					
-ir_mixcr_file_name				ir_mixcr_file_name	string	FALSE												IR_Repertoire	IR_Curator			FALSE																					
-ir_rearrangement_tool			ir_rearrangement_tool	ir_rearrangement_tool	string	FALSE												IR_Repertoire	IR_Curator			FALSE																					
-ir_record_number			ir_record_number	ir_record_number	integer	FALSE												IR_Repertoire	IR_Curator			FALSE																					
-ir_rearrangement_number				ir_rearrangement_number	integer	FALSE												IR_Repertoire	IR_Curator			FALSE																					
-ir_annotation_set_metadata_id				ir_annotation_set_metadata_id	string	FALSE												IR_Repertoire				FALSE																					
-ir_ancillary_rearrangement_file_name				ir_ancillary_rearrangement_file_name	string	FALSE												IR_Repertoire	IR_Curator			FALSE																					
+ir_igblast_file_name				ir_igblast_file_name	string	FALSE												IR_Repertoire	IR_Curator			FALSE	string																				
+ir_imgt_file_name				ir_imgt_file_name	string	FALSE												IR_Repertoire	IR_Curator			FALSE	string																				
+ir_mixcr_file_name				ir_mixcr_file_name	string	FALSE												IR_Repertoire	IR_Curator			FALSE	string																				
+ir_rearrangement_tool			ir_rearrangement_tool	ir_rearrangement_tool	string	FALSE												IR_Repertoire	IR_Curator			FALSE	string																				
+ir_record_number			ir_record_number	ir_record_number	integer	FALSE												IR_Repertoire	IR_Curator			FALSE	integer																				
+ir_rearrangement_number				ir_rearrangement_number	integer	FALSE												IR_Repertoire	IR_Curator			FALSE	integer																				
+ir_annotation_set_metadata_id				ir_annotation_set_metadata_id	string	FALSE												IR_Repertoire				FALSE	string																				
+ir_ancillary_rearrangement_file_name				ir_ancillary_rearrangement_file_name	string	FALSE												IR_Repertoire	IR_Curator			FALSE	string																				
 																																											
 rearrangement_id	Sequence ID	Sequence ID		sequence_id	string	FALSE								sequence_id		TRUE	TRUE	Rearrangement	Rearrangement	sequence_id	sequence_id	FALSE	string	"Unique query sequence identifier for the Rearrangment. Most often this will be the input sequence header or a substring thereof, but may also be a custom identifier defined by the tool in cases where query sequences have been combined in some fashion prior to alignment. When downloaded from an AIRR Data Commons repository, this will usually be a universally unique record locator for linking with other objects in the AIRR Data Model."		TRUE	TRUE										sequence_id				sequence_id	sequence_id	sequence_id
 sequence	Sequence	Sequence		sequence	string	FALSE	1_Summary.txt	Sequence	FALSE	sequence	readSequence	rearrangement	rearrangement	sequence		TRUE	TRUE	Rearrangement	Rearrangement	sequence	sequence	FALSE	string	"The query nucleotide sequence. Usually, this is the unmodified input sequence, which may be reverse complemented if necessary. In some cases, this field may contain consensus sequences or other types of collapsed input sequences if these steps are performed prior to alignment."													sequence				sequence	sequence	sequence
