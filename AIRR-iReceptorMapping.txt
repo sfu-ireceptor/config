@@ -19,10 +19,10 @@ subject_id	Subject ID	Subject ID	subject_id	subject_id	string	FALSE								subje
 synthetic	Synthetic library	Synthetic library	synthetic	synthetic	boolean	FALSE								synthetic	Synthetic library	TRUE	TRUE	Repertoire	Subject	subject.synthetic	subject.synthetic	FALSE	boolean	TRUE for libraries in which the diversity has been synthetically generated (e.g. phage display)	Synthetic library	FALSE	TRUE			TRUE	1	subject						synthetic		synthetic	boolean	synthetic	boolean	
 organism	Organism	Organism	species	species	string	FALSE								species	Organism	TRUE	TRUE	Repertoire	Subject	subject.species.label	subject.species.label	FALSE	string	Binomial designation of subject's species	Organism	FALSE	TRUE		"NCBITAXON:9606, Homo sapiens"	TRUE	1	subject	ontology					organism		organism	string	organism	string	
 organism_id	Organism (Ontology ID)	Organism (Ontology ID)	species_id	species_id	string	FALSE								species_id	Organism (Ontology ID)	TRUE	TRUE	Repertoire	Subject	subject.species.id	subject.species.id	FALSE	string	Binomial designation of subject's species (Ontology ID)	Organism (Ontology ID)	FALSE	TRUE		"NCBITAXON:9606, Homo sapiens"	TRUE	1	subject	ontology					organism_id		organism_id	string	organism_id	string	
-organism_deprecated	Organism (deprecated)	Organism (deprecated)		organism	string	FALSE								organism		TRUE	FALSE	Repertoire	Subject	subject.organism.label	subject.organism.label	FALSE	string	Binomial designation of subject's species										TRUE	Field was renamed to species for clarity.	['species']		organism_deprecated		organism_deprecated	string	organism_deprecated	string	
-organism_id_deprecated	Organism (deprecated)	Organism (deprecated)		organism_id	string	FALSE								organism_id		TRUE	FALSE	Repertoire	Subject	subject.organism.id	subject.organism.id	FALSE	string	Binomial designation of subject's species (Ontology ID)										TRUE	Field was renamed to species for clarity.	['species']		organism_id_deprecated		organism_id_deprecated	string	organism_id_deprecated	string	
+organism_deprecated	Organism (deprecated)	Organism (deprecated)		organism	string	FALSE								organism		TRUE	FALSE	Repertoire	Subject			FALSE	string	Binomial designation of subject's species										TRUE	Field was renamed to species for clarity.	['species']		organism_deprecated		organism_deprecated	string	organism_deprecated	string	
+organism_id_deprecated	Organism (deprecated)	Organism (deprecated)		organism_id	string	FALSE								organism_id		TRUE	FALSE	Repertoire	Subject			FALSE	string	Binomial designation of subject's species (Ontology ID)										TRUE	Field was renamed to species for clarity.	['species']		organism_id_deprecated		organism_id_deprecated	string	organism_id_deprecated	string	
 sex	Sex	Sex	sex	sex	string	FALSE								sex	Sex	TRUE	TRUE	Repertoire	Subject	subject.sex	subject.sex	FALSE	string	Biological sex of subject	Sex	TRUE	TRUE		female	TRUE	1	subject	controlled vocabulary				"male,female,pooled,hermaphrodite,intersex,not collected,not applicable"	sex		sex	string	sex	string	
-age	Age (deperecated)	Age (deperecated)		age	string	FALSE								age		TRUE	FALSE	Repertoire	Subject	subject.age	subject.age	FALSE	string											TRUE	Split into two fields to specify as an age range.	"['age_min', 'age_max', 'age_unit']"		age		age	string	age	string	
+age	Age (deprecated)	Age (deprecated)		age	string	FALSE								age		TRUE	FALSE	Repertoire	Subject	subject.age	subject.age	FALSE	string											TRUE	Split into two fields to specify as an age range.	"['age_min', 'age_max', 'age_unit']"		age		age	string	age	string	
 ir_subject_age_min	Age minimum	Age minimum	age_min	age_min	number	FALSE								age_min	Age minimum	TRUE	TRUE	Repertoire	Subject	subject.age_min	subject.age_min	FALSE	number	Specific age or lower boundary of age range.	Age minimum	TRUE	TRUE		60	TRUE	1	subject						age_min		age_min	number	age_min	number	
 ir_subject_age_max	Age maximum	Age maximum	age_max	age_max	number	FALSE								age_max	Age maximum	TRUE	TRUE	Repertoire	Subject	subject.age_max	subject.age_max	FALSE	number	Upper boundary of age range or equal to age_min for specific age. This field should only be null if age_min is null.	Age maximum	TRUE	TRUE		80	TRUE	1	subject						age_max		age_max	number	age_max	number	
 age_unit	Age unit	Age unit	age_unit	age_unit	string	FALSE								age_unit	Age unit	TRUE	TRUE	Repertoire	Subject	subject.age_unit.label	subject.age_unit.label	FALSE	string	Unit of age range	Age unit	TRUE	TRUE		"UO:0000036, year"	TRUE	1	subject	ontology					age_unit		age_unit	string	age_unit	string	
@@ -286,3 +286,128 @@ ir_pair_v_call	V Gene and Allele (paired)	V Gene and Allele (paired)		ir_pair_v_
 ir_pair_d_call	D Gene and Allele (paired)	D Gene and Allele (paired)		ir_pair_d_call	string	TRUE												IR_Rearrangement	IR_RearrangementPair			FALSE	string															ir_pair_d_call						
 ir_pair_j_call	J Gene and Allele (paired)	J Gene and Allele (paired)		ir_pair_j_call	string	TRUE												IR_Rearrangement	IR_RearrangementPair			FALSE	string															ir_pair_j_call						
 ir_pair_junction_aa	Junction AA (paired)	Junction AA (paired)		ir_pair_junction_aa	string	FALSE												IR_Rearrangement	IR_RearrangementPair			FALSE	string															ir_pair_junction_aa						
+																																												
+clone_id_clone	Clone ID	Clone ID		clone_id	string	FALSE								clone_id		TRUE	TRUE	Clone	Clone	clone_id	clone_id	FALSE	string	Identifier for the clone.														clone_id				clone_id	clone_id	clone_id
+repertoire_id_clone	Repertoire ID	Repertoire ID		repertoire_id	string	FALSE								repertoire_id		TRUE	FALSE	Clone	Clone	repertoire_id	repertoire_id	FALSE	string	Identifier to the associated repertoire in study metadata.		TRUE	TRUE											repertoire_id				repertoire_id	repertoire_id	repertoire_id
+data_processing_id_clone	Data Processing ID	Data Processing ID		data_processing_id	string	FALSE								data_processing_id		TRUE	FALSE	Clone	Clone	data_processing_id	data_processing_id	FALSE	string	Identifier of the data processing object in the repertoire metadata for this clone.		TRUE	TRUE											data_processing_id				data_processing_id	data_processing_id	data_processing_id
+sequences_clone	Sequences	Sequences		sequences	string	TRUE								sequences		TRUE	FALSE	Clone	Clone	sequences	sequences	TRUE	string	List sequence_id strings that act as keys to the Rearrangement records for members of the clone.														sequences				sequences	sequences	sequences
+v_call_clone	V Call	V Call		v_call	string	FALSE								v_call		TRUE	FALSE	Clone	Clone	v_call	v_call	FALSE	string	"V gene with allele of the inferred ancestral of the clone. For example, IGHV4-59*01."					IGHV4-59*01									v_call				v_call	v_call	v_call
+d_call_clone	D Call	D Call		d_call	string	FALSE								d_call		TRUE	FALSE	Clone	Clone	d_call	d_call	FALSE	string	"D gene with allele of the inferred ancestor of the clone. For example, IGHD3-10*01."					IGHD3-10*01									d_call				d_call	d_call	d_call
+j_call_clone	J Call	J Call		j_call	string	FALSE								j_call		TRUE	FALSE	Clone	Clone	j_call	j_call	FALSE	string	"J gene with allele of the inferred ancestor of the clone. For example, IGHJ4*02."					IGHJ4*02									j_call				j_call	j_call	j_call
+junction_clone	Junction	Junction		junction	string	FALSE								junction		TRUE	FALSE	Clone	Clone	junction	junction	FALSE	string	"Nucleotide sequence for the junction region of the inferred ancestor of the clone, where the junction is defined as the CDR3 plus the two flanking conserved codons."														junction				junction	junction	junction
+junction_aa_clone	Junction AA	Junction AA		junction_aa	string	FALSE								junction_aa		TRUE	FALSE	Clone	Clone	junction_aa	junction_aa	FALSE	string	Amino acid translation of the junction.														junction_aa				junction_aa	junction_aa	junction_aa
+junction_length_clone	Junction Length	Junction Length		junction_length	integer	FALSE								junction_length		TRUE	FALSE	Clone	Clone	junction_length	junction_length	FALSE	integer	Number of nucleotides in the junction.														junction_length				junction_length	junction_length	junction_length
+junction_aa_length_clone	Junction AA Length	Junction AA Length		junction_aa_length	integer	FALSE								junction_aa_length		TRUE	FALSE	Clone	Clone	junction_aa_length	junction_aa_length	FALSE	integer	Number of amino acids in junction_aa.														junction_aa_length				junction_aa_length	junction_aa_length	junction_aa_length
+germline_alignment_clone	Germline Alignment	Germline Alignment		germline_alignment	string	FALSE								germline_alignment		TRUE	TRUE	Clone	Clone	germline_alignment	germline_alignment	FALSE	string	"Assembled, aligned, full-length inferred ancestor of the clone spanning the same region as the sequence_alignment field of nodes (typically the V(D)J region) and including the same set of corrections and spacers (if any)."														germline_alignment				germline_alignment	germline_alignment	germline_alignment
+germline_alignment_aa_clone	Germline Alignment AA	Germline Alignment AA		germline_alignment_aa	string	FALSE								germline_alignment_aa		TRUE	FALSE	Clone	Clone	germline_alignment_aa	germline_alignment_aa	FALSE	string	Amino acid translation of germline_alignment.														germline_alignment_aa				germline_alignment_aa	germline_alignment_aa	germline_alignment_aa
+v_alignment_start_clone	V Alignment Start	V Alignment Start		v_alignment_start	integer	FALSE								v_alignment_start		TRUE	FALSE	Clone	Clone	v_alignment_start	v_alignment_start	FALSE	integer	Start position in the V gene alignment in both the sequence_alignment and germline_alignment fields (1-based closed interval).														v_alignment_start				v_alignment_start	v_alignment_start	v_alignment_start
+v_alignment_end_clone	V Alignment End	V Alignment End		v_alignment_end	integer	FALSE								v_alignment_end		TRUE	FALSE	Clone	Clone	v_alignment_end	v_alignment_end	FALSE	integer	End position in the V gene alignment in both the sequence_alignment and germline_alignment fields (1-based closed interval).														v_alignment_end				v_alignment_end	v_alignment_end	v_alignment_end
+d_alignment_start_clone	D Alignment Start	D Alignment Start		d_alignment_start	integer	FALSE								d_alignment_start		TRUE	FALSE	Clone	Clone	d_alignment_start	d_alignment_start	FALSE	integer	Start position of the D gene alignment in both the sequence_alignment and germline_alignment fields (1-based closed interval).														d_alignment_start				d_alignment_start	d_alignment_start	d_alignment_start
+d_alignment_end_clone	D Alignment End	D Alignment End		d_alignment_end	integer	FALSE								d_alignment_end		TRUE	FALSE	Clone	Clone	d_alignment_end	d_alignment_end	FALSE	integer	End position of the D gene alignment in both the sequence_alignment and germline_alignment fields (1-based closed interval).														d_alignment_end				d_alignment_end	d_alignment_end	d_alignment_end
+j_alignment_start_clone	J Alignment Start	J Alignment Start		j_alignment_start	integer	FALSE								j_alignment_start		TRUE	FALSE	Clone	Clone	j_alignment_start	j_alignment_start	FALSE	integer	Start position of the J gene alignment in both the sequence_alignment and germline_alignment fields (1-based closed interval).														j_alignment_start				j_alignment_start	j_alignment_start	j_alignment_start
+j_alignment_end_clone	J Alignment End	J Alignment End		j_alignment_end	integer	FALSE								j_alignment_end		TRUE	FALSE	Clone	Clone	j_alignment_end	j_alignment_end	FALSE	integer	End position of the J gene alignment in both the sequence_alignment and germline_alignment fields (1-based closed interval).														j_alignment_end				j_alignment_end	j_alignment_end	j_alignment_end
+junction_start_clone	Junction Start	Junction Start		junction_start	integer	FALSE								junction_start		TRUE	FALSE	Clone	Clone	junction_start	junction_start	FALSE	integer	Junction region start position in the alignment (1-based closed interval).														junction_start				junction_start	junction_start	junction_start
+junction_end_clone	Junction End	Junction End		junction_end	integer	FALSE								junction_end		TRUE	FALSE	Clone	Clone	junction_end	junction_end	FALSE	integer	Junction region end position in the alignment (1-based closed interval).														junction_end				junction_end	junction_end	junction_end
+sequence_count_clone	Sequence Count	Sequence Count		sequence_count	integer	FALSE								sequence_count		TRUE	FALSE	Clone	Clone	sequence_count	sequence_count	FALSE	integer	Number of Rearrangement records (sequences) included in this clone														sequence_count				sequence_count	sequence_count	sequence_count
+seed_id_clone	Seed ID	Seed ID		seed_id	string	FALSE								seed_id		TRUE	FALSE	Clone	Clone	seed_id	seed_id	FALSE	string	sequence_id of the seed sequence. Empty string (or null) if there is no seed sequence.														seed_id				seed_id	seed_id	seed_id
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
