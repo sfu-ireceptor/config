@@ -208,11 +208,11 @@ j_germline_start	J Germline Start	J Germline Start		j_germline_start	integer	FAL
 j_germline_end	J Germline End	J Germline End		j_germline_end	integer	FALSE				j_germline_end				j_germline_end		TRUE	FALSE	Rearrangement	Rearrangement	j_germline_end	j_germline_end	FALSE	integer	Alignment end position in the J gene reference sequence (1-based closed interval).														j_germline_end				j_germline_end	j_germline_end	j_germline_end
 j_alignment_start	J Alignment Start	J Alignment Start		j_alignment_start	integer	FALSE				j_alignment_start				j_alignment_start		TRUE	FALSE	Rearrangement	Rearrangement	j_alignment_start	j_alignment_start	FALSE	integer	Start position of the J gene alignment in both the sequence_alignment and germline_alignment fields (1-based closed interval).														j_alignment_start				j_alignment_start	j_alignment_start	j_alignment_start
 j_alignment_end	J Alignment End	J Alignment End		j_alignment_end	integer	FALSE				j_alignment_end				j_alignment_end		TRUE	FALSE	Rearrangement	Rearrangement	j_alignment_end	j_alignment_end	FALSE	integer	End position of the J gene alignment in both the sequence_alignment and germline_alignment fields (1-based closed interval).														j_alignment_end				j_alignment_end	j_alignment_end	j_alignment_end
-cdr1_start	CDR1 Start	CDR1 Start		cdr1_start	integer	FALSE	3_Nt-sequences.txt	CDR1-IMGT start	FALSE	cdr1_start				cdr1_start		TRUE	FALSE	Rearrangement	Rearrangement	cdr1_start	cdr1_start	FALSE	integer	CDR1 start position in the query sequence (1-based closed interval).														cdr1_start				cdr1_start	cdr1_start	cdr1_start
+cdr1_start	CDR1 Start	CDR1 Start		cdr1_start	integer	FALSE	3_Nt-sequences.txt	CDR1-IMGT start	FALSE	cdr1_start		cdr1_start_index		cdr1_start		TRUE	FALSE	Rearrangement	Rearrangement	cdr1_start	cdr1_start	FALSE	integer	CDR1 start position in the query sequence (1-based closed interval).														cdr1_start				cdr1_start	cdr1_start	cdr1_start
 cdr1_end	CDR1 End	CDR1 End		cdr1_end	integer	FALSE	3_Nt-sequences.txt	CDR1-IMGT end	FALSE	cdr1_end				cdr1_end		TRUE	FALSE	Rearrangement	Rearrangement	cdr1_end	cdr1_end	FALSE	integer	CDR1 end position in the query sequence (1-based closed interval).														cdr1_end				cdr1_end	cdr1_end	cdr1_end
-cdr2_start	CDR2 Start	CDR2 Start		cdr2_start	integer	FALSE	3_Nt-sequences.txt	CDR2-IMGT start	FALSE	cdr2_start				cdr2_start		TRUE	FALSE	Rearrangement	Rearrangement	cdr2_start	cdr2_start	FALSE	integer	CDR2 start position in the query sequence (1-based closed interval).														cdr2_start				cdr2_start	cdr2_start	cdr2_start
+cdr2_start	CDR2 Start	CDR2 Start		cdr2_start	integer	FALSE	3_Nt-sequences.txt	CDR2-IMGT start	FALSE	cdr2_start		cdr2_start_index		cdr2_start		TRUE	FALSE	Rearrangement	Rearrangement	cdr2_start	cdr2_start	FALSE	integer	CDR2 start position in the query sequence (1-based closed interval).														cdr2_start				cdr2_start	cdr2_start	cdr2_start
 cdr2_end	CDR2 End	CDR2 End		cdr2_end	integer	FALSE	3_Nt-sequences.txt	CDR2-IMGT end	FALSE	cdr2_end				cdr2_end		TRUE	FALSE	Rearrangement	Rearrangement	cdr2_end	cdr2_end	FALSE	integer	CDR2 end position in the query sequence (1-based closed interval).														cdr2_end				cdr2_end	cdr2_end	cdr2_end
-cdr3_start	CDR3 Start	CDR3 Start		cdr3_start	integer	FALSE	3_Nt-sequences.txt	CDR3-IMGT start	FALSE	cdr3_start				cdr3_start		TRUE	FALSE	Rearrangement	Rearrangement	cdr3_start	cdr3_start	FALSE	integer	CDR3 start position in the query sequence (1-based closed interval).														cdr3_start				cdr3_start	cdr3_start	cdr3_start
+cdr3_start	CDR3 Start	CDR3 Start		cdr3_start	integer	FALSE	3_Nt-sequences.txt	CDR3-IMGT start	FALSE	cdr3_start		cdr3_start_index		cdr3_start		TRUE	FALSE	Rearrangement	Rearrangement	cdr3_start	cdr3_start	FALSE	integer	CDR3 start position in the query sequence (1-based closed interval).														cdr3_start				cdr3_start	cdr3_start	cdr3_start
 cdr3_end	CDR3 End	CDR3 End		cdr3_end	integer	FALSE	3_Nt-sequences.txt	CDR3-IMGT end	FALSE	cdr3_end				cdr3_end		TRUE	FALSE	Rearrangement	Rearrangement	cdr3_end	cdr3_end	FALSE	integer	CDR3 end position in the query sequence (1-based closed interval).														cdr3_end				cdr3_end	cdr3_end	cdr3_end
 fwr1_start	FWR1 Start	FWR1 Start		fwr1_start	integer	FALSE	3_Nt-sequences.txt	FR1-IMGT start	FALSE	fwr1_start				fwr1_start		TRUE	FALSE	Rearrangement	Rearrangement	fwr1_start	fwr1_start	FALSE	integer	FWR1 start position in the query sequence (1-based closed interval).														fwr1_start				fwr1_start	fwr1_start	fwr1_start
 fwr1_end	FWR1 End	FWR1 End		fwr1_end	integer	FALSE	3_Nt-sequences.txt	FR1-IMGT end	FALSE	fwr1_end				fwr1_end		TRUE	FALSE	Rearrangement	Rearrangement	fwr1_end	fwr1_end	FALSE	integer	FWR1 end position in the query sequence (1-based closed interval).														fwr1_end				fwr1_end	fwr1_end	fwr1_end
@@ -310,104 +310,3 @@ junction_start_clone	Junction Start	Junction Start		junction_start	integer	FALSE
 junction_end_clone	Junction End	Junction End		junction_end	integer	FALSE								junction_end		TRUE	FALSE	Clone	Clone	junction_end	junction_end	FALSE	integer	Junction region end position in the alignment (1-based closed interval).														junction_end				junction_end	junction_end	junction_end
 sequence_count_clone	Sequence Count	Sequence Count		sequence_count	integer	FALSE								sequence_count		TRUE	FALSE	Clone	Clone	sequence_count	sequence_count	FALSE	integer	Number of Rearrangement records (sequences) included in this clone														sequence_count				sequence_count	sequence_count	sequence_count
 seed_id_clone	Seed ID	Seed ID		seed_id	string	FALSE								seed_id		TRUE	FALSE	Clone	Clone	seed_id	seed_id	FALSE	string	sequence_id of the seed sequence. Empty string (or null) if there is no seed sequence.														seed_id				seed_id	seed_id	seed_id
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
-																																												
