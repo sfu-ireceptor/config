@@ -105,6 +105,7 @@ analysis_provenance_id	Analysis Provenance ID	Analysis ID	analysis_provenance_id
 																																												
 ir_sequence_count	# Annotated Sequences	# Annotated Sequences		ir_sequence_count	integer	FALSE												IR_Repertoire	IR_API			FALSE	integer															ir_sequence_count						
 ir_filtered_sequence_count				ir_filtered_sequence_count	integer	FALSE												IR_Repertoire	IR_API			FALSE	integer																					
+ir_clone_count	# Annotated Clones	# Annotated Clones		ir_clone_count	integer	FALSE												IR_Repertoire	IR_API			FALSE	integer															ir_clone_count						
 ir_username																		IR_Repertoire	IR_Parameter																									
 																																												
 																																												
