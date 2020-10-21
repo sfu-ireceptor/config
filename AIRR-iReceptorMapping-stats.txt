@@ -347,4 +347,5 @@
 																		"IRPlus_stats"	"IRPlus_stats_all"				"data"																	"data"						
 																		"IRPlus_stats"	"IRPlus_stats_all"				"key"																	"key"						
 																		"IRPlus_stats"	"IRPlus_stats_all"				"value"																	"value"						
-																		"IRPlus_stats"	"IRPlus_stats_all"			"repertoires"																		"repertoires"						
+																		"IRPlus_stats"	"IRPlus_stats_all"			"repertoires"	"repertoires"																	"repertoires"						
+																		"IRPlus_stats"	"IRPlus_stats_all"			"repertoire"	"repertoire"																	"repertoire"						
