@@ -122,7 +122,7 @@ ir_mixcr_file_name				ir_mixcr_file_name	string	FALSE													IR_Repertoire	
 ir_rearrangement_tool				ir_rearrangement_tool	string	FALSE													IR_Repertoire	IR_Curator			FALSE	string																					
 ir_record_number			ir_record_number	ir_record_number	integer	FALSE													IR_Repertoire	IR_Curator			FALSE	integer																					
 ir_rearrangement_number				ir_rearrangement_number	integer	FALSE													IR_Repertoire	IR_Curator			FALSE	integer																					
-ir_annotation_set_metadata_id				ir_annotation_set_metadata_id	string	FALSE													IR_Repertoire				FALSE	string																					
+ir_annotation_set_metadata_id				ir_annotation_set_metadata_id	string	FALSE													IR_Repertoire				FALSE	string															ir_annotation_set_metadata_id						
 ir_ancillary_rearrangement_file_name				ir_ancillary_rearrangement_file_name	string	FALSE													IR_Repertoire	IR_Curator			FALSE	string																					
 																																													
 rearrangement_id	Sequence ID	Sequence ID		sequence_id	string	FALSE									sequence_id		TRUE	TRUE	Rearrangement	Rearrangement	sequence_id	sequence_id	FALSE	string	"Unique query sequence identifier for the Rearrangment. Most often this will be the input sequence header or a substring thereof, but may also be a custom identifier defined by the tool in cases where query sequences have been combined in some fashion prior to alignment. When downloaded from an AIRR Data Commons repository, this will usually be a universally unique record locator for linking with other objects in the AIRR Data Model."			TRUE	TRUE										sequence_id				sequence_id	sequence_id	sequence_id
