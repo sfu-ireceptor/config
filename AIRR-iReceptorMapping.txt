@@ -314,69 +314,68 @@ seed_id_clone	Seed ID	Seed ID		seed_id	string	FALSE									seed_id		TRUE	FALSE	
 																																																
 ir_annotation_set_metadata_id_clone				ir_annotation_set_metadata_id_clone	string	FALSE													IR_Clone	IR_CloneDB			FALSE	string															ir_annotation_set_metadata_id_clone									
 																																																
-																																																
-rearrangement_count_stats				rearrangement_count_productive															IRPlus_stats	IRPlus_stats_rearrangement_count																										rearrangement_count	rearrangement_count	
-rearrangement_count_productive_stats				duplicate_count															IRPlus_stats	IRPlus_stats_rearrangement_count																										rearrangement_count_productive	rearrangement_count_productive	
-duplicate_count_stats				duplicate_count_productive															IRPlus_stats	IRPlus_stats_rearrangement_count																										duplicate_count	duplicate_count	
-duplicate_count_productive_stats				junction_length															IRPlus_stats	IRPlus_stats_rearrangement_count																										duplicate_count_productive	duplicate_count_productive	
-junction_length_stats				junction_aa_length															IRPlus_stats	IRPlus_stats_junction_length																										junction_length	junction_length	
-junction_aa_length_stats				junction_length_productive															IRPlus_stats	IRPlus_stats_junction_length																										junction_aa_length	junction_aa_length	
-junction_length_productive_stats				junction_aa_length_productive															IRPlus_stats	IRPlus_stats_junction_length																										junction_length_productive	junction_length_productive	
-junction_aa_length_productive_stats				v_call_unique															IRPlus_stats	IRPlus_stats_junction_length																										junction_aa_length_productive	junction_aa_length_productive	
-v_call_unique_stats				v_call_exists															IRPlus_stats	IRPlus_stats_gene_usage																										v_call_unique	v_call_unique	
-v_call_exists_stats				v_family_unique															IRPlus_stats	IRPlus_stats_gene_usage																										v_call_exists	v_call_exists	
-v_family_unique_stats				v_family_exists															IRPlus_stats	IRPlus_stats_gene_usage																										v_family_unique	v_family_unique	
-v_family_exists_stats				v_gene_unique															IRPlus_stats	IRPlus_stats_gene_usage																										v_family_exists	v_family_exists	
-v_gene_unique_stats				v_gene_exists															IRPlus_stats	IRPlus_stats_gene_usage																										v_gene_unique	v_gene_unique	
-v_gene_exists_stats				d_call_unique															IRPlus_stats	IRPlus_stats_gene_usage																										v_gene_exists	v_gene_exists	
-d_call_unique_stats				d_call_exists															IRPlus_stats	IRPlus_stats_gene_usage																										d_call_unique	d_call_unique	
-d_call_exists_stats				d_family_unique															IRPlus_stats	IRPlus_stats_gene_usage																										d_call_exists	d_call_exists	
-d_family_unique_stats				d_family_exists															IRPlus_stats	IRPlus_stats_gene_usage																										d_family_unique	d_family_unique	
-d_family_exists_stats				d_gene_unique															IRPlus_stats	IRPlus_stats_gene_usage																										d_family_exists	d_family_exists	
-d_gene_unique_stats				d_gene_exists															IRPlus_stats	IRPlus_stats_gene_usage																										d_gene_unique	d_gene_unique	
-d_gene_exists_stats				j_call_unique															IRPlus_stats	IRPlus_stats_gene_usage																										d_gene_exists	d_gene_exists	
-j_call_unique_stats				j_call_exists															IRPlus_stats	IRPlus_stats_gene_usage																										j_call_unique	j_call_unique	
-j_call_exists_stats				j_family_unique															IRPlus_stats	IRPlus_stats_gene_usage																										j_call_exists	j_call_exists	
-j_family_unique_stats				j_family_exists															IRPlus_stats	IRPlus_stats_gene_usage																										j_family_unique	j_family_unique	
-j_family_exists_stats				j_gene_unique															IRPlus_stats	IRPlus_stats_gene_usage																										j_family_exists	j_family_exists	
-j_gene_unique_stats				j_gene_exists															IRPlus_stats	IRPlus_stats_gene_usage																										j_gene_unique	j_gene_unique	
-j_gene_exists_stats				c_call_unique															IRPlus_stats	IRPlus_stats_gene_usage																										j_gene_exists	j_gene_exists	
-c_call_unique_stats				c_call_exists															IRPlus_stats	IRPlus_stats_gene_usage																										c_call_unique	c_call_unique	
-c_call_exists_stats				c_family_unique															IRPlus_stats	IRPlus_stats_gene_usage																										c_call_exists	c_call_exists	
-c_family_unique_stats				c_family_exists															IRPlus_stats	IRPlus_stats_gene_usage																										c_family_unique	c_family_unique	
-c_family_exists_stats				c_gene_unique															IRPlus_stats	IRPlus_stats_gene_usage																										c_family_exists	c_family_exists	
-c_gene_unique_stats				c_gene_exists															IRPlus_stats	IRPlus_stats_gene_usage																										c_gene_unique	c_gene_unique	
-c_gene_exists_stats				v_call_unique_productive															IRPlus_stats	IRPlus_stats_gene_usage																										c_gene_exists	c_gene_exists	
-v_call_unique_productive_stats				v_call_exists_productive															IRPlus_stats	IRPlus_stats_gene_usage																										v_call_unique_productive	v_call_unique_productive	
-v_call_exists_productive_stats				v_family_unique_productive															IRPlus_stats	IRPlus_stats_gene_usage																										v_call_exists_productive	v_call_exists_productive	
-v_family_unique_productive_stats				v_family_exists_productive															IRPlus_stats	IRPlus_stats_gene_usage																										v_family_unique_productive	v_family_unique_productive	
-v_family_exists_productive_stats				v_gene_unique_productive															IRPlus_stats	IRPlus_stats_gene_usage																										v_family_exists_productive	v_family_exists_productive	
-v_gene_unique_productive_stats				v_gene_exists_productive															IRPlus_stats	IRPlus_stats_gene_usage																										v_gene_unique_productive	v_gene_unique_productive	
-v_gene_exists_productive_stats				d_call_unique_productive															IRPlus_stats	IRPlus_stats_gene_usage																										v_gene_exists_productive	v_gene_exists_productive	
-d_call_unique_productive_stats				d_call_exists_productive															IRPlus_stats	IRPlus_stats_gene_usage																										d_call_unique_productive	d_call_unique_productive	
-d_call_exists_productive_stats				d_family_unique_productive															IRPlus_stats	IRPlus_stats_gene_usage																										d_call_exists_productive	d_call_exists_productive	
-d_family_unique_productive_stats				d_family_exists_productive															IRPlus_stats	IRPlus_stats_gene_usage																										d_family_unique_productive	d_family_unique_productive	
-d_family_exists_productive_stats				d_gene_unique_productive															IRPlus_stats	IRPlus_stats_gene_usage																										d_family_exists_productive	d_family_exists_productive	
-d_gene_unique_productive_stats				d_gene_exists_productive															IRPlus_stats	IRPlus_stats_gene_usage																										d_gene_unique_productive	d_gene_unique_productive	
-d_gene_exists_productive_stats				j_call_unique_productive															IRPlus_stats	IRPlus_stats_gene_usage																										d_gene_exists_productive	d_gene_exists_productive	
-j_call_unique_productive_stats				j_call_exists_productive															IRPlus_stats	IRPlus_stats_gene_usage																										j_call_unique_productive	j_call_unique_productive	
-j_call_exists_productive_stats				j_family_unique_productive															IRPlus_stats	IRPlus_stats_gene_usage																										j_call_exists_productive	j_call_exists_productive	
-j_family_unique_productive_stats				j_family_exists_productive															IRPlus_stats	IRPlus_stats_gene_usage																										j_family_unique_productive	j_family_unique_productive	
-j_family_exists_productive_stats				j_gene_unique_productive															IRPlus_stats	IRPlus_stats_gene_usage																										j_family_exists_productive	j_family_exists_productive	
-j_gene_unique_productive_stats				j_gene_exists_productive															IRPlus_stats	IRPlus_stats_gene_usage																										j_gene_unique_productive	j_gene_unique_productive	
-j_gene_exists_productive_stats				c_call_unique_productive															IRPlus_stats	IRPlus_stats_gene_usage																										j_gene_exists_productive	j_gene_exists_productive	
-c_call_unique_productive_stats				c_call_exists_productive															IRPlus_stats	IRPlus_stats_gene_usage																										c_call_unique_productive	c_call_unique_productive	
-c_call_exists_productive_stats				c_family_unique_productive															IRPlus_stats	IRPlus_stats_gene_usage																										c_call_exists_productive	c_call_exists_productive	
-c_family_unique_productive_stats				c_family_exists_productive															IRPlus_stats	IRPlus_stats_gene_usage																										c_family_unique_productive	c_family_unique_productive	
-c_family_exists_productive_stats				c_gene_unique_productive															IRPlus_stats	IRPlus_stats_gene_usage																										c_family_exists_productive	c_family_exists_productive	
-c_gene_unique_productive_stats				c_gene_exists_productive															IRPlus_stats	IRPlus_stats_gene_usage																										c_gene_unique_productive	c_gene_unique_productive	
-c_gene_exists_productive_stats				total															IRPlus_stats	IRPlus_stats_gene_usage																										c_gene_exists_productive	c_gene_exists_productive	
-total_stats																			IRPlus_stats	IRPlus_stats_all																										total	total	
-name_stats				name															IRPlus_stats	IRPlus_stats_all																												
-statistics_stats																			IRPlus_stats	IRPlus_stats_all																										statistics	statistics	
-statistics_name_stats																			IRPlus_stats	IRPlus_stats_all																											statistics_name	
-data_stats																			IRPlus_stats	IRPlus_stats_all																											data	
-key_stats																			IRPlus_stats	IRPlus_stats_all																											key	
-value_stats																			IRPlus_stats	IRPlus_stats_all																											value	
-repertoires_stats																			IRPlus_stats	IRPlus_stats_all																										repertoires	repertoires	
-repertoire_stats																			IRPlus_stats	IRPlus_stats_all																										repertoire	repertoire	
+ir_annotation_set_metadata_id_stats				ir_annotation_set_metadata_id															IRPlus_stats	IRPlus_stats_all				string															ir_annotation_set_metadata_id									
+rearrangement_count_stats				rearrangement_count															IRPlus_stats	IRPlus_stats_rearrangement_count				string															rearrangement_count							rearrangement_count	rearrangement_count	
+rearrangement_count_productive_stats				rearrangement_count_productive															IRPlus_stats	IRPlus_stats_rearrangement_count				string															rearrangement_count_productive							rearrangement_count_productive	rearrangement_count_productive	
+duplicate_count_stats				duplicate_count															IRPlus_stats	IRPlus_stats_rearrangement_count				string															duplicate_count							duplicate_count	duplicate_count	
+duplicate_count_productive_stats				duplicate_count_productive															IRPlus_stats	IRPlus_stats_rearrangement_count				string															duplicate_count_productive							duplicate_count_productive	duplicate_count_productive	
+junction_length_stats				junction_length															IRPlus_stats	IRPlus_stats_junction_length				string															junction_length							junction_length	junction_length	
+junction_aa_length_stats				junction_aa_length															IRPlus_stats	IRPlus_stats_junction_length				string															junction_aa_length							junction_aa_length	junction_aa_length	
+junction_length_productive_stats				junction_length_productive															IRPlus_stats	IRPlus_stats_junction_length				string															junction_length_productive							junction_length_productive	junction_length_productive	
+junction_aa_length_productive_stats				junction_aa_length_productive															IRPlus_stats	IRPlus_stats_junction_length				string															junction_aa_length_productive							junction_aa_length_productive	junction_aa_length_productive	
+v_call_unique_stats				v_call_unique															IRPlus_stats	IRPlus_stats_gene_usage				string															v_call_unique							v_call_unique	v_call_unique	
+v_call_exists_stats				v_call_exists															IRPlus_stats	IRPlus_stats_gene_usage				string															v_call_exists							v_call_exists	v_call_exists	
+v_family_unique_stats				v_family_unique															IRPlus_stats	IRPlus_stats_gene_usage				string															v_subgroup_unique							v_subgroup_unique	v_subgroup_unique	
+v_family_exists_stats				v_family_exists															IRPlus_stats	IRPlus_stats_gene_usage				string															v_subgroup_exists							v_subgroup_exists	v_subgroup_exists	
+v_gene_unique_stats				v_gene_unique															IRPlus_stats	IRPlus_stats_gene_usage				string															v_gene_unique							v_gene_unique	v_gene_unique	
+v_gene_exists_stats				v_gene_exists															IRPlus_stats	IRPlus_stats_gene_usage				string															v_gene_exists							v_gene_exists	v_gene_exists	
+d_call_unique_stats				d_call_unique															IRPlus_stats	IRPlus_stats_gene_usage				string															d_call_unique							d_call_unique	d_call_unique	
+d_call_exists_stats				d_call_exists															IRPlus_stats	IRPlus_stats_gene_usage				string															d_call_exists							d_call_exists	d_call_exists	
+d_family_unique_stats				d_family_unique															IRPlus_stats	IRPlus_stats_gene_usage				string															d_subgroup_unique							d_subgroup_unique	d_subgroup_unique	
+d_family_exists_stats				d_family_exists															IRPlus_stats	IRPlus_stats_gene_usage				string															d_subgroup_exists							d_subgroup_exists	d_subgroup_exists	
+d_gene_unique_stats				d_gene_unique															IRPlus_stats	IRPlus_stats_gene_usage				string															d_gene_unique							d_gene_unique	d_gene_unique	
+d_gene_exists_stats				d_gene_exists															IRPlus_stats	IRPlus_stats_gene_usage				string															d_gene_exists							d_gene_exists	d_gene_exists	
+j_call_unique_stats				j_call_unique															IRPlus_stats	IRPlus_stats_gene_usage				string															j_call_unique							j_call_unique	j_call_unique	
+j_call_exists_stats				j_call_exists															IRPlus_stats	IRPlus_stats_gene_usage				string															j_call_exists							j_call_exists	j_call_exists	
+j_family_unique_stats				j_family_unique															IRPlus_stats	IRPlus_stats_gene_usage				string															j_subgroup_unique							j_subgroup_unique	j_subgroup_unique	
+j_family_exists_stats				j_family_exists															IRPlus_stats	IRPlus_stats_gene_usage				string															j_subgroup_exists							j_subgroup_exists	j_subgroup_exists	
+j_gene_unique_stats				j_gene_unique															IRPlus_stats	IRPlus_stats_gene_usage				string															j_gene_unique							j_gene_unique	j_gene_unique	
+j_gene_exists_stats				j_gene_exists															IRPlus_stats	IRPlus_stats_gene_usage				string															j_gene_exists							j_gene_exists	j_gene_exists	
+c_call_unique_stats				c_call_unique															IRPlus_stats	IRPlus_stats_gene_usage				string															c_call_unique							c_call_unique	c_call_unique	
+c_call_exists_stats				c_call_exists															IRPlus_stats	IRPlus_stats_gene_usage				string															c_call_exists							c_call_exists	c_call_exists	
+c_family_unique_stats				c_family_unique															IRPlus_stats	IRPlus_stats_gene_usage				string															c_subgroup_unique							c_subgroup_unique	c_subgroup_unique	
+c_family_exists_stats				c_family_exists															IRPlus_stats	IRPlus_stats_gene_usage				string															c_subgroup_exists							c_subgroup_exists	c_subgroup_exists	
+c_gene_unique_stats				c_gene_unique															IRPlus_stats	IRPlus_stats_gene_usage				string															c_gene_unique							c_gene_unique	c_gene_unique	
+c_gene_exists_stats				c_gene_exists															IRPlus_stats	IRPlus_stats_gene_usage				string															c_gene_exists							c_gene_exists	c_gene_exists	
+v_call_unique_productive_stats				v_call_unique_productive															IRPlus_stats	IRPlus_stats_gene_usage				string															v_call_unique_productive							v_call_unique_productive	v_call_unique_productive	
+v_call_exists_productive_stats				v_call_exists_productive															IRPlus_stats	IRPlus_stats_gene_usage				string															v_call_exists_productive							v_call_exists_productive	v_call_exists_productive	
+v_family_unique_productive_stats				v_family_unique_productive															IRPlus_stats	IRPlus_stats_gene_usage				string															v_subgroup_unique_productive							v_subgroup_unique_productive	v_subgroup_unique_productive	
+v_family_exists_productive_stats				v_family_exists_productive															IRPlus_stats	IRPlus_stats_gene_usage				string															v_subgroup_exists_productive							v_subgroup_exists_productive	v_subgroup_exists_productive	
+v_gene_unique_productive_stats				v_gene_unique_productive															IRPlus_stats	IRPlus_stats_gene_usage				string															v_gene_unique_productive							v_gene_unique_productive	v_gene_unique_productive	
+v_gene_exists_productive_stats				v_gene_exists_productive															IRPlus_stats	IRPlus_stats_gene_usage				string															v_gene_exists_productive							v_gene_exists_productive	v_gene_exists_productive	
+d_call_unique_productive_stats				d_call_unique_productive															IRPlus_stats	IRPlus_stats_gene_usage				string															d_call_unique_productive							d_call_unique_productive	d_call_unique_productive	
+d_call_exists_productive_stats				d_call_exists_productive															IRPlus_stats	IRPlus_stats_gene_usage				string															d_call_exists_productive							d_call_exists_productive	d_call_exists_productive	
+d_family_unique_productive_stats				d_family_unique_productive															IRPlus_stats	IRPlus_stats_gene_usage				string															d_subgroup_unique_productive							d_subgroup_unique_productive	d_subgroup_unique_productive	
+d_family_exists_productive_stats				d_family_exists_productive															IRPlus_stats	IRPlus_stats_gene_usage				string															d_subgroup_exists_productive							d_subgroup_exists_productive	d_subgroup_exists_productive	
+d_gene_unique_productive_stats				d_gene_unique_productive															IRPlus_stats	IRPlus_stats_gene_usage				string															d_gene_unique_productive							d_gene_unique_productive	d_gene_unique_productive	
+d_gene_exists_productive_stats				d_gene_exists_productive															IRPlus_stats	IRPlus_stats_gene_usage				string															d_gene_exists_productive							d_gene_exists_productive	d_gene_exists_productive	
+j_call_unique_productive_stats				j_call_unique_productive															IRPlus_stats	IRPlus_stats_gene_usage				string															j_call_unique_productive							j_call_unique_productive	j_call_unique_productive	
+j_call_exists_productive_stats				j_call_exists_productive															IRPlus_stats	IRPlus_stats_gene_usage				string															j_call_exists_productive							j_call_exists_productive	j_call_exists_productive	
+j_family_unique_productive_stats				j_family_unique_productive															IRPlus_stats	IRPlus_stats_gene_usage				string															j_subgroup_unique_productive							j_subgroup_unique_productive	j_subgroup_unique_productive	
+j_family_exists_productive_stats				j_family_exists_productive															IRPlus_stats	IRPlus_stats_gene_usage				string															j_subgroup_exists_productive							j_subgroup_exists_productive	j_subgroup_exists_productive	
+j_gene_unique_productive_stats				j_gene_unique_productive															IRPlus_stats	IRPlus_stats_gene_usage				string															j_gene_unique_productive							j_gene_unique_productive	j_gene_unique_productive	
+j_gene_exists_productive_stats				j_gene_exists_productive															IRPlus_stats	IRPlus_stats_gene_usage				string															j_gene_exists_productive							j_gene_exists_productive	j_gene_exists_productive	
+c_call_unique_productive_stats				c_call_unique_productive															IRPlus_stats	IRPlus_stats_gene_usage				string															c_call_unique_productive							c_call_unique_productive	c_call_unique_productive	
+c_call_exists_productive_stats				c_call_exists_productive															IRPlus_stats	IRPlus_stats_gene_usage				string															c_call_exists_productive							c_call_exists_productive	c_call_exists_productive	
+c_family_unique_productive_stats				c_family_unique_productive															IRPlus_stats	IRPlus_stats_gene_usage				string															c_subgroup_unique_productive							c_subgroup_unique_productive	c_subgroup_unique_productive	
+c_family_exists_productive_stats				c_family_exists_productive															IRPlus_stats	IRPlus_stats_gene_usage				string															c_subgroup_exists_productive							c_subgroup_exists_productive	c_subgroup_exists_productive	
+c_gene_unique_productive_stats				c_gene_unique_productive															IRPlus_stats	IRPlus_stats_gene_usage				string															c_gene_unique_productive							c_gene_unique_productive	c_gene_unique_productive	
+c_gene_exists_productive_stats				c_gene_exists_productive															IRPlus_stats	IRPlus_stats_gene_usage				string															c_gene_exists_productive							c_gene_exists_productive	c_gene_exists_productive	
+total_stats				total															IRPlus_stats	IRPlus_stats_all																			total								total	
+name_stats																			IRPlus_stats	IRPlus_stats_all																			statistics							statistics	statistics	
+statistic_name_stats				name															IRPlus_stats	IRPlus_stats_all																			statistic_name								statistic_name	
+data_stats																			IRPlus_stats	IRPlus_stats_all																			data								data	
+key_stats																			IRPlus_stats	IRPlus_stats_all																			key								key	
+value_stats																			IRPlus_stats	IRPlus_stats_all																			value								value	
+repertoires_stats																			IRPlus_stats	IRPlus_stats_all																			repertoires							repertoires	repertoires	
+repertoire_stats																			IRPlus_stats	IRPlus_stats_all																			repertoire							repertoire	repertoire	
