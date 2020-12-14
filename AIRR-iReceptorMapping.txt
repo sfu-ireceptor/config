@@ -376,6 +376,6 @@ name_stats																			IRPlus_stats	IRPlus_stats_all																			sta
 statistic_name_stats				name															IRPlus_stats	IRPlus_stats_all																			statistic_name								statistic_name	
 data_stats																			IRPlus_stats	IRPlus_stats_all																			data								data	
 key_stats																			IRPlus_stats	IRPlus_stats_all																			key								key	
-value_stats																			IRPlus_stats	IRPlus_stats_all																			value								value	
+value_stats																			IRPlus_stats	IRPlus_stats_all																			value								count	
 repertoires_stats																			IRPlus_stats	IRPlus_stats_all																			repertoires							repertoires	repertoires	
 repertoire_stats																			IRPlus_stats	IRPlus_stats_all																			repertoire							repertoire	repertoire	
