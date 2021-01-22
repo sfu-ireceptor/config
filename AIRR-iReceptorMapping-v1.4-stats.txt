@@ -346,6 +346,6 @@ ir_pair_junction_aa	Junction AA (paired)	Junction AA (paired)		ir_pair_junction_
 				name														IRPlus_stats	IRPlus_stats_all				statistic_name																	statistic_name						
 																		IRPlus_stats	IRPlus_stats_all				data																	data						
 																		IRPlus_stats	IRPlus_stats_all				key																	key						
-																		IRPlus_stats	IRPlus_stats_all				value																	value						
+																		IRPlus_stats	IRPlus_stats_all				value																	count						
 																		IRPlus_stats	IRPlus_stats_all			repertoires	repertoires																	repertoires						
 																		IRPlus_stats	IRPlus_stats_all			repertoire	repertoire																	repertoire						
