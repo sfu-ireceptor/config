@@ -285,62 +285,62 @@ ir_pair_d_call	D Gene and Allele (paired)	D Gene and Allele (paired)		ir_pair_d_
 ir_pair_j_call	J Gene and Allele (paired)	J Gene and Allele (paired)		ir_pair_j_call	string	TRUE												IR_Rearrangement	IR_RearrangementPair						FALSE	string														ir_pair_j_call						
 ir_pair_junction_aa	Junction AA (paired)	Junction AA (paired)		ir_pair_junction_aa	string	FALSE												IR_Rearrangement	IR_RearrangementPair						FALSE	string														ir_pair_junction_aa						
 				ir_project_sample_id														IRPlus_stats	IRPlus_stats_all																					ir_project_sample_id						
-																		IRPlus_stats	IRPlus_stats_rearrangement_count			rearrangement_count	rearrangement_count																	rearrangement_count						
-																		IRPlus_stats	IRPlus_stats_rearrangement_count			rearrangement_count_productive	rearrangement_count_productive																	rearrangement_count_productive						
-																		IRPlus_stats	IRPlus_stats_rearrangement_count			duplicate_count	duplicate_count																	duplicate_count						
-																		IRPlus_stats	IRPlus_stats_rearrangement_count			duplicate_count_productive	duplicate_count_productive																	duplicate_count_productive						
-																		IRPlus_stats	IRPlus_stats_junction_length			junction_length	junction_length																	junction_length						
-																		IRPlus_stats	IRPlus_stats_junction_length			junction_aa_length	junction_aa_length																	junction_aa_length						
-																		IRPlus_stats	IRPlus_stats_junction_length			junction_length_productive	junction_length_productive																	junction_length_productive						
-																		IRPlus_stats	IRPlus_stats_junction_length			junction_aa_length_productive	junction_aa_length_productive																	junction_aa_length_productive						
-																		IRPlus_stats	IRPlus_stats_gene_usage			v_call_unique	v_call_unique																	v_call_unique						
-																		IRPlus_stats	IRPlus_stats_gene_usage			v_call_exists	v_call_exists																	v_call_exists						
-																		IRPlus_stats	IRPlus_stats_gene_usage			v_subgroup_unique	v_subgroup_unique																	v_subgroup_unique						
-																		IRPlus_stats	IRPlus_stats_gene_usage			v_subgroup_exists	v_subgroup_exists																	v_subgroup_exists						
-																		IRPlus_stats	IRPlus_stats_gene_usage			v_gene_unique	v_gene_unique																	v_gene_unique						
-																		IRPlus_stats	IRPlus_stats_gene_usage			v_gene_exists	v_gene_exists																	v_gene_exists						
-																		IRPlus_stats	IRPlus_stats_gene_usage			d_call_unique	d_call_unique																	d_call_unique						
-																		IRPlus_stats	IRPlus_stats_gene_usage			d_call_exists	d_call_exists																	d_call_exists						
-																		IRPlus_stats	IRPlus_stats_gene_usage			d_subgroup_unique	d_subgroup_unique																	d_subgroup_unique						
-																		IRPlus_stats	IRPlus_stats_gene_usage			d_subgroup_exists	d_subgroup_exists																	d_subgroup_exists						
-																		IRPlus_stats	IRPlus_stats_gene_usage			d_gene_unique	d_gene_unique																	d_gene_unique						
-																		IRPlus_stats	IRPlus_stats_gene_usage			d_gene_exists	d_gene_exists																	d_gene_exists						
-																		IRPlus_stats	IRPlus_stats_gene_usage			j_call_unique	j_call_unique																	j_call_unique						
-																		IRPlus_stats	IRPlus_stats_gene_usage			j_call_exists	j_call_exists																	j_call_exists						
-																		IRPlus_stats	IRPlus_stats_gene_usage			j_subgroup_unique	j_subgroup_unique																	j_subgroup_unique						
-																		IRPlus_stats	IRPlus_stats_gene_usage			j_subgroup_exists	j_subgroup_exists																	j_subgroup_exists						
-																		IRPlus_stats	IRPlus_stats_gene_usage			j_gene_unique	j_gene_unique																	j_gene_unique						
-																		IRPlus_stats	IRPlus_stats_gene_usage			j_gene_exists	j_gene_exists																	j_gene_exists						
-																		IRPlus_stats	IRPlus_stats_gene_usage			c_call_unique	c_call_unique																	c_call_unique						
-																		IRPlus_stats	IRPlus_stats_gene_usage			c_call_exists	c_call_exists																	c_call_exists						
-																		IRPlus_stats	IRPlus_stats_gene_usage			c_subgroup_unique	c_subgroup_unique																	c_subgroup_unique						
-																		IRPlus_stats	IRPlus_stats_gene_usage			c_subgroup_exists	c_subgroup_exists																	c_subgroup_exists						
-																		IRPlus_stats	IRPlus_stats_gene_usage			c_gene_unique	c_gene_unique																	c_gene_unique						
-																		IRPlus_stats	IRPlus_stats_gene_usage			c_gene_exists	c_gene_exists																	c_gene_exists						
-																		IRPlus_stats	IRPlus_stats_gene_usage			v_call_unique_productive	v_call_unique_productive																	v_call_unique_productive						
-																		IRPlus_stats	IRPlus_stats_gene_usage			v_call_exists_productive	v_call_exists_productive																	v_call_exists_productive						
-																		IRPlus_stats	IRPlus_stats_gene_usage			v_subgroup_unique_productive	v_subgroup_unique_productive																	v_subgroup_unique_productive						
-																		IRPlus_stats	IRPlus_stats_gene_usage			v_subgroup_exists_productive	v_subgroup_exists_productive																	v_subgroup_exists_productive						
-																		IRPlus_stats	IRPlus_stats_gene_usage			v_gene_unique_productive	v_gene_unique_productive																	v_gene_unique_productive						
-																		IRPlus_stats	IRPlus_stats_gene_usage			v_gene_exists_productive	v_gene_exists_productive																	v_gene_exists_productive						
-																		IRPlus_stats	IRPlus_stats_gene_usage			d_call_unique_productive	d_call_unique_productive																	d_call_unique_productive						
-																		IRPlus_stats	IRPlus_stats_gene_usage			d_call_exists_productive	d_call_exists_productive																	d_call_exists_productive						
-																		IRPlus_stats	IRPlus_stats_gene_usage			d_subgroup_unique_productive	d_subgroup_unique_productive																	d_subgroup_unique_productive						
-																		IRPlus_stats	IRPlus_stats_gene_usage			d_subgroup_exists_productive	d_subgroup_exists_productive																	d_subgroup_exists_productive						
-																		IRPlus_stats	IRPlus_stats_gene_usage			d_gene_unique_productive	d_gene_unique_productive																	d_gene_unique_productive						
-																		IRPlus_stats	IRPlus_stats_gene_usage			d_gene_exists_productive	d_gene_exists_productive																	d_gene_exists_productive						
-																		IRPlus_stats	IRPlus_stats_gene_usage			j_call_unique_productive	j_call_unique_productive																	j_call_unique_productive						
-																		IRPlus_stats	IRPlus_stats_gene_usage			j_call_exists_productive	j_call_exists_productive																	j_call_exists_productive						
-																		IRPlus_stats	IRPlus_stats_gene_usage			j_subgroup_unique_productive	j_subgroup_unique_productive																	j_subgroup_unique_productive						
-																		IRPlus_stats	IRPlus_stats_gene_usage			j_subgroup_exists_productive	j_subgroup_exists_productive																	j_subgroup_exists_productive						
-																		IRPlus_stats	IRPlus_stats_gene_usage			j_gene_unique_productive	j_gene_unique_productive																	j_gene_unique_productive						
-																		IRPlus_stats	IRPlus_stats_gene_usage			j_gene_exists_productive	j_gene_exists_productive																	j_gene_exists_productive						
-																		IRPlus_stats	IRPlus_stats_gene_usage			c_call_unique_productive	c_call_unique_productive																	c_call_unique_productive						
-																		IRPlus_stats	IRPlus_stats_gene_usage			c_call_exists_productive	c_call_exists_productive																	c_call_exists_productive						
-																		IRPlus_stats	IRPlus_stats_gene_usage			c_subgroup_unique_productive	c_subgroup_unique_productive																	c_subgroup_unique_productive						
-																		IRPlus_stats	IRPlus_stats_gene_usage			c_subgroup_exists_productive	c_subgroup_exists_productive																	c_subgroup_exists_productive						
-																		IRPlus_stats	IRPlus_stats_gene_usage			c_gene_unique_productive	c_gene_unique_productive																	c_gene_unique_productive						
-																		IRPlus_stats	IRPlus_stats_gene_usage			c_gene_exists_productive	c_gene_exists_productive																	c_gene_exists_productive						
+				rearrangement_count														IRPlus_stats	IRPlus_stats_rearrangement_count			rearrangement_count	rearrangement_count																	rearrangement_count						
+				rearrangement_count_productive														IRPlus_stats	IRPlus_stats_rearrangement_count			rearrangement_count_productive	rearrangement_count_productive																	rearrangement_count_productive						
+				duplicate_count														IRPlus_stats	IRPlus_stats_rearrangement_count			duplicate_count	duplicate_count																	duplicate_count						
+				duplicate_count_productive														IRPlus_stats	IRPlus_stats_rearrangement_count			duplicate_count_productive	duplicate_count_productive																	duplicate_count_productive						
+				junction_length														IRPlus_stats	IRPlus_stats_junction_length			junction_length	junction_length																	junction_length						
+				junction_aa_length														IRPlus_stats	IRPlus_stats_junction_length			junction_aa_length	junction_aa_length																	junction_aa_length						
+				junction_length_productive														IRPlus_stats	IRPlus_stats_junction_length			junction_length_productive	junction_length_productive																	junction_length_productive						
+				junction_aa_length_productive														IRPlus_stats	IRPlus_stats_junction_length			junction_aa_length_productive	junction_aa_length_productive																	junction_aa_length_productive						
+				v_call_unique														IRPlus_stats	IRPlus_stats_gene_usage			v_call_unique	v_call_unique																	v_call_unique						
+				v_call_exists														IRPlus_stats	IRPlus_stats_gene_usage			v_call_exists	v_call_exists																	v_call_exists						
+				v_family_unique														IRPlus_stats	IRPlus_stats_gene_usage			v_subgroup_unique	v_subgroup_unique																	v_subgroup_unique						
+				v_family_exists														IRPlus_stats	IRPlus_stats_gene_usage			v_subgroup_exists	v_subgroup_exists																	v_subgroup_exists						
+				v_gene_unique														IRPlus_stats	IRPlus_stats_gene_usage			v_gene_unique	v_gene_unique																	v_gene_unique						
+				v_gene_exists														IRPlus_stats	IRPlus_stats_gene_usage			v_gene_exists	v_gene_exists																	v_gene_exists						
+				d_call_unique														IRPlus_stats	IRPlus_stats_gene_usage			d_call_unique	d_call_unique																	d_call_unique						
+				d_call_exists														IRPlus_stats	IRPlus_stats_gene_usage			d_call_exists	d_call_exists																	d_call_exists						
+				d_family_unique														IRPlus_stats	IRPlus_stats_gene_usage			d_subgroup_unique	d_subgroup_unique																	d_subgroup_unique						
+				d_family_exists														IRPlus_stats	IRPlus_stats_gene_usage			d_subgroup_exists	d_subgroup_exists																	d_subgroup_exists						
+				d_gene_unique														IRPlus_stats	IRPlus_stats_gene_usage			d_gene_unique	d_gene_unique																	d_gene_unique						
+				d_gene_exists														IRPlus_stats	IRPlus_stats_gene_usage			d_gene_exists	d_gene_exists																	d_gene_exists						
+				j_call_unique														IRPlus_stats	IRPlus_stats_gene_usage			j_call_unique	j_call_unique																	j_call_unique						
+				j_call_exists														IRPlus_stats	IRPlus_stats_gene_usage			j_call_exists	j_call_exists																	j_call_exists						
+				j_family_unique														IRPlus_stats	IRPlus_stats_gene_usage			j_subgroup_unique	j_subgroup_unique																	j_subgroup_unique						
+				j_family_exists														IRPlus_stats	IRPlus_stats_gene_usage			j_subgroup_exists	j_subgroup_exists																	j_subgroup_exists						
+				j_gene_unique														IRPlus_stats	IRPlus_stats_gene_usage			j_gene_unique	j_gene_unique																	j_gene_unique						
+				j_gene_exists														IRPlus_stats	IRPlus_stats_gene_usage			j_gene_exists	j_gene_exists																	j_gene_exists						
+				c_call_unique														IRPlus_stats	IRPlus_stats_gene_usage			c_call_unique	c_call_unique																	c_call_unique						
+				c_call_exists														IRPlus_stats	IRPlus_stats_gene_usage			c_call_exists	c_call_exists																	c_call_exists						
+				c_family_unique														IRPlus_stats	IRPlus_stats_gene_usage			c_subgroup_unique	c_subgroup_unique																	c_subgroup_unique						
+				c_family_exists														IRPlus_stats	IRPlus_stats_gene_usage			c_subgroup_exists	c_subgroup_exists																	c_subgroup_exists						
+				c_gene_unique														IRPlus_stats	IRPlus_stats_gene_usage			c_gene_unique	c_gene_unique																	c_gene_unique						
+				c_gene_exists														IRPlus_stats	IRPlus_stats_gene_usage			c_gene_exists	c_gene_exists																	c_gene_exists						
+				v_call_unique_productive														IRPlus_stats	IRPlus_stats_gene_usage			v_call_unique_productive	v_call_unique_productive																	v_call_unique_productive						
+				v_call_exists_productive														IRPlus_stats	IRPlus_stats_gene_usage			v_call_exists_productive	v_call_exists_productive																	v_call_exists_productive						
+				v_family_unique_productive														IRPlus_stats	IRPlus_stats_gene_usage			v_subgroup_unique_productive	v_subgroup_unique_productive																	v_subgroup_unique_productive						
+				v_family_exists_productive														IRPlus_stats	IRPlus_stats_gene_usage			v_subgroup_exists_productive	v_subgroup_exists_productive																	v_subgroup_exists_productive						
+				v_gene_unique_productive														IRPlus_stats	IRPlus_stats_gene_usage			v_gene_unique_productive	v_gene_unique_productive																	v_gene_unique_productive						
+				v_gene_exists_productive														IRPlus_stats	IRPlus_stats_gene_usage			v_gene_exists_productive	v_gene_exists_productive																	v_gene_exists_productive						
+				d_call_unique_productive														IRPlus_stats	IRPlus_stats_gene_usage			d_call_unique_productive	d_call_unique_productive																	d_call_unique_productive						
+				d_call_exists_productive														IRPlus_stats	IRPlus_stats_gene_usage			d_call_exists_productive	d_call_exists_productive																	d_call_exists_productive						
+				d_family_unique_productive														IRPlus_stats	IRPlus_stats_gene_usage			d_subgroup_unique_productive	d_subgroup_unique_productive																	d_subgroup_unique_productive						
+				d_family_exists_productive														IRPlus_stats	IRPlus_stats_gene_usage			d_subgroup_exists_productive	d_subgroup_exists_productive																	d_subgroup_exists_productive						
+				d_gene_unique_productive														IRPlus_stats	IRPlus_stats_gene_usage			d_gene_unique_productive	d_gene_unique_productive																	d_gene_unique_productive						
+				d_gene_exists_productive														IRPlus_stats	IRPlus_stats_gene_usage			d_gene_exists_productive	d_gene_exists_productive																	d_gene_exists_productive						
+				j_call_unique_productive														IRPlus_stats	IRPlus_stats_gene_usage			j_call_unique_productive	j_call_unique_productive																	j_call_unique_productive						
+				j_call_exists_productive														IRPlus_stats	IRPlus_stats_gene_usage			j_call_exists_productive	j_call_exists_productive																	j_call_exists_productive						
+				j_family_unique_productive														IRPlus_stats	IRPlus_stats_gene_usage			j_subgroup_unique_productive	j_subgroup_unique_productive																	j_subgroup_unique_productive						
+				j_family_exists_productive														IRPlus_stats	IRPlus_stats_gene_usage			j_subgroup_exists_productive	j_subgroup_exists_productive																	j_subgroup_exists_productive						
+				j_gene_unique_productive														IRPlus_stats	IRPlus_stats_gene_usage			j_gene_unique_productive	j_gene_unique_productive																	j_gene_unique_productive						
+				j_gene_exists_productive														IRPlus_stats	IRPlus_stats_gene_usage			j_gene_exists_productive	j_gene_exists_productive																	j_gene_exists_productive						
+				c_call_unique_productive														IRPlus_stats	IRPlus_stats_gene_usage			c_call_unique_productive	c_call_unique_productive																	c_call_unique_productive						
+				c_call_exists_productive														IRPlus_stats	IRPlus_stats_gene_usage			c_call_exists_productive	c_call_exists_productive																	c_call_exists_productive						
+				c_family_unique_productive														IRPlus_stats	IRPlus_stats_gene_usage			c_subgroup_unique_productive	c_subgroup_unique_productive																	c_subgroup_unique_productive						
+				c_family_exists_productive														IRPlus_stats	IRPlus_stats_gene_usage			c_subgroup_exists_productive	c_subgroup_exists_productive																	c_subgroup_exists_productive						
+				c_gene_unique_productive														IRPlus_stats	IRPlus_stats_gene_usage			c_gene_unique_productive	c_gene_unique_productive																	c_gene_unique_productive						
+				c_gene_exists_productive														IRPlus_stats	IRPlus_stats_gene_usage			c_gene_exists_productive	c_gene_exists_productive																	c_gene_exists_productive						
 				total														IRPlus_stats	IRPlus_stats_all				total																	total						
 																		IRPlus_stats	IRPlus_stats_all			statistics	statistics																	statistics						
 				name														IRPlus_stats	IRPlus_stats_all				statistic_name																	statistic_name						
