@@ -312,6 +312,7 @@ junction_end_clone	Junction End	Junction End		junction_end	integer	FALSE								
 sequence_count_clone	Sequence Count	Sequence Count		sequence_count	integer	FALSE					cloneCount	cloneCount			sequence_count		TRUE	FALSE	Clone	Clone	sequence_count	sequence_count	FALSE	integer	Number of Rearrangement records (sequences) included in this clone														sequence_count				sequence_count	sequence_count	sequence_count			
 seed_id_clone	Seed ID	Seed ID		seed_id	string	FALSE									seed_id		TRUE	FALSE	Clone	Clone	seed_id	seed_id	FALSE	string	sequence_id of the seed sequence. Empty string (or null) if there is no seed sequence.														seed_id				seed_id	seed_id	seed_id			
 																																																
+ir_substring	Junction Substring	Junction Substring		ir_substring	string	TRUE													IR_Clone	IR_CloneDB			FALSE	string															substring									
 ir_annotation_set_metadata_id_clone				ir_annotation_set_metadata_id_clone	string	FALSE													IR_Clone	IR_CloneDB			FALSE	string															ir_annotation_set_metadata_id_clone									
 																																																
 ir_annotation_set_metadata_id_stats				ir_annotation_set_metadata_id															IRPlus_stats	IRPlus_stats_all				string															ir_project_sample_id									
