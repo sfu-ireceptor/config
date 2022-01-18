@@ -135,6 +135,7 @@ ir_sequence_count	# Annotated Sequences	# Annotated Sequences		ir_sequence_count
 ir_filtered_sequence_count				ir_filtered_sequence_count	integer	FALSE													IR_Repertoire	IR_API			FALSE	integer																								
 ir_clone_count	# Annotated Clones	# Annotated Clones		ir_clone_count	integer	FALSE													IR_Repertoire	IR_API			FALSE	integer															ir_clone_count									
 ir_cell_count	# Annotated Cells	# Annotated Cells		ir_cell_count	integer	FALSE													IR_Repertoire	IR_API			FALSE	integer															ir_cell_count									
+ir_expression_count	# Annotated Expression Markers	# Annotated Expression Markers		ir_expression_count	integer	FALSE													IR_Repertoire	IR_API			FALSE	integer															ir_expression_count									
 ir_username																			IR_Repertoire	IR_Parameter																												
 																																																
 																																																
@@ -453,3 +454,4 @@ value_expression	Property Value	Property Value		value	number	FALSE									value
 ir_annotation_set_metadata_id_expression				ir_annotation_set_metadata_id_expression	string	FALSE													IR_Expression	IR_ExpressionDB			FALSE	string															ir_annotation_set_metadata_id_expression									
 ir_created_at_expression	Creation Date	Creation Date		ir_created_at_expression	string	FALSE													IR_Expression	IR_ExpressionDB			FALSE	string															ir_created_at_expression									
 ir_updated_at_expression	Update Date	Update Date		ir_updated_at_expression	string	FALSE													IR_Expression	IR_ExpressionDB			FALSE	string															ir_updated_at_expression									
+ir_property_label_expression	Expression label	Expression label		ir_property_label_expression	string	FALSE													IR_Expression	IR_ExpressionDB			FALSE	string															ir_property_label_expression									
