@@ -358,7 +358,7 @@ seed_id_clone	Seed ID	Seed ID		seed_id	string	FALSE									seed_id		TRUE	FALSE	
 																																																
 ir_substring_clone				ir_substring_clone	string	TRUE													IR_Clone	IR_CloneDB			FALSE	string															substring									
 ir_annotation_set_metadata_id_clone				ir_annotation_set_metadata_id_clone	string	FALSE													IR_Clone	IR_CloneDB			FALSE	string															ir_annotation_set_metadata_id_clone									
-ir_vgene_family_clone	V-Gene Family	V-Gene Family		ir_vgene_family_clone_clone	string	TRUE													IR_Clone	IR_CloneDB	v_subgroup	v_subgroup	FALSE	string															vgene_family									
+ir_vgene_family_clone	V-Gene Family	V-Gene Family		ir_vgene_family_clone	string	TRUE													IR_Clone	IR_CloneDB	v_subgroup	v_subgroup	FALSE	string															vgene_family									
 ir_vgene_gene_clone	V-Gene Gene	V-Gene Gene		ir_vgene_gene_clone	string	TRUE													IR_Clone	IR_CloneDB	v_gene	v_gene	FALSE	string															vgene_gene									
 ir_jgene_family_clone	J-Gene Family	J-Gene Family		ir_jgene_family_clone	string	TRUE													IR_Clone	IR_CloneDB	j_subgroup	j_subgroup	FALSE	string															jgene_family									
 ir_jgene_gene_clone	J-Gene Gene	J-Gene Gene		ir_jgene_gene_clone	string	TRUE													IR_Clone	IR_CloneDB	j_gene	j_gene	FALSE	string															jgene_gene									
