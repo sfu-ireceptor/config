@@ -109,7 +109,7 @@
 "ir_project_sample_id_list"																		"IR_Repertoire"	"IR_Parameter"																					"ir_project_sample_id_list"		"ir_project_sample_id_list"	"array"			
 "ir_data_format"																		"IR_Repertoire"	"IR_Parameter"																											
 "ir_show_unproductive"																		"IR_Repertoire"	"IR_Parameter"																											
-																																														
+"ir_annotation_set_metadata_id"				"ir_annotation_set_metadata_id"	"integer"	"FALSE"												"IR_Repertoire"	"IR_API"																					"ir_annotation_set_metadata_id"						
 																																														
 "ir_library_source"																		"IR_Repertoire"	"IR_Curator"						"FALSE"																					
 																																														
