@@ -332,14 +332,14 @@ ir_dgene_gene	D-Gene Gene	D-Gene Gene		ir_dgene_gene	string	TRUE													IR_
 ir_created_at_rearrangement	Creation Date	Creation Date		ir_created_at_rearrangement	string	FALSE													IR_Rearrangement	IR_RearrangementDB			FALSE	string															ir_created_at_rearrangement									
 ir_updated_at_rearrangement	Update Date	Update Date		ir_updated_at_rearrangement	string	FALSE													IR_Rearrangement	IR_RearrangementDB			FALSE	string															ir_updated_at_rearrangement									
 																																																
-ir_pair_cdr1_aa	CDR1 AA (paired)	CDR1 AA (paired)		ir_pair_cdr1_aa	string	FALSE													IR_Rearrangement	IR_RearrangementPair			FALSE	string															ir_pair_cdr1_aa									
-ir_pair_cdr2_aa	CDR2 AA (paired)	CDR2 AA (paired)		ir_pair_cdr2_aa	string	FALSE													IR_Rearrangement	IR_RearrangementPair			FALSE	string															ir_pair_cdr2_aa									
-ir_pair_cdr3_aa	CDR3 AA (paired)	CDR3 AA (paired)		ir_pair_cdr3_aa	string	FALSE													IR_Rearrangement	IR_RearrangementPair			FALSE	string															ir_pair_cdr3_aa									
-ir_pair_v_call	V Gene and Allele (paired)	V Gene and Allele (paired)		ir_pair_v_call	string	TRUE													IR_Rearrangement	IR_RearrangementPair			FALSE	string															ir_pair_v_call									
-ir_pair_d_call	D Gene and Allele (paired)	D Gene and Allele (paired)		ir_pair_d_call	string	TRUE													IR_Rearrangement	IR_RearrangementPair			FALSE	string															ir_pair_d_call									
-ir_pair_j_call	J Gene and Allele (paired)	J Gene and Allele (paired)		ir_pair_j_call	string	TRUE													IR_Rearrangement	IR_RearrangementPair			FALSE	string															ir_pair_j_call									
-ir_pair_junction_aa	Junction AA (paired)	Junction AA (paired)		ir_pair_junction_aa	string	FALSE													IR_Rearrangement	IR_RearrangementPair			FALSE	string															ir_pair_junction_aa									
-ir_pair_id	Paired Sequence ID	Pair ID		ir_pair_id	string	FALSE													IR_Rearrangement	IR_RearrangementPair			FALSE	string															ir_pair_id									
+																																																
+																																																
+																																																
+																																																
+																																																
+																																																
+																																																
+																																																
 																																																
 clone_id_clone	Clone ID	Clone ID		clone_id	string	FALSE					cloneId	cloneId		clone_id	clone_id		TRUE	TRUE	Clone	Clone	clone_id	clone_id	FALSE	string	Identifier for the clone.														clone_id				clone_id	string	clone_id			
 repertoire_id_clone	Repertoire ID	Repertoire ID		repertoire_id	string	FALSE									repertoire_id		TRUE	FALSE	Clone	Clone	repertoire_id	repertoire_id	FALSE	string	Identifier to the associated repertoire in study metadata.		TRUE	TRUE											repertoire_id				repertoire_id	string	repertoire_id			
