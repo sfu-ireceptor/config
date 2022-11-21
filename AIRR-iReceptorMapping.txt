@@ -331,8 +331,8 @@ ir_dgene_family	D-Gene Family	D-Gene Family		ir_dgene_family	string	TRUE								
 ir_dgene_gene	D-Gene Gene	D-Gene Gene		ir_dgene_gene	string	TRUE													IR_Rearrangement	IR_RearrangementDB	d_gene	d_gene	FALSE	string															dgene_gene									
 ir_created_at_rearrangement	Creation Date	Creation Date		ir_created_at_rearrangement	string	FALSE													IR_Rearrangement	IR_RearrangementDB			FALSE	string															ir_created_at_rearrangement									
 ir_updated_at_rearrangement	Update Date	Update Date		ir_updated_at_rearrangement	string	FALSE													IR_Rearrangement	IR_RearrangementDB			FALSE	string															ir_updated_at_rearrangement									
-																																																
-																																																
+ir_clone_id_rearrangement	Clone ID from Annotation Tool	Tool Clone ID		adc_annotation_clone_id	string	FALSE									adc_annotation_clone_id				IR_Rearrangement	IR_RearrangementDB	adc_annotation_clone_id	adc_annotation_clone_id	FALSE	string															adc_annotation_clone_id				adc_annotation_clone_id	string	adc_annotation_clone_id			
+ir_cell_id_rearrangement	Cell ID from Annotation Tool	Tool Cell ID		adc_annotation_cell_id	string	FALSE									adc_annotation_cell_id				IR_Rearrangement	IR_RearrangementDB	adc_annotation_cell_id	adc_annotation_cell_id	FALSE	string															adc_annotation_cell_id				adc_annotation_cell_id	string	adc_annotation_cell_id			
 																																																
 																																																
 																																																
